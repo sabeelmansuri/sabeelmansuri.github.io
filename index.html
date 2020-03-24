@@ -12,18 +12,21 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="homepage is-preload">
+	<body class="homepage is-preload no-scrollbar">
 		<div id="page-wrapper">
 
 			<!-- Header -->
 				<div id="header">
+                    <div style="position:fixed; top:0px; width: 100%; background-color: red; z-index: 100; height: 35px">
+                    I'm currently updating my website. Check back by the end of the week for the final product!
+                    </div>
 
 					<!-- Inner -->
 						<div class="inner">
 							<header>
 								<h1>Sabeel Mansuri</h1>
 								<hr />
-								<p>Student at the University of California, San Deigo</p>
+								<p>Software Engineer, Bioinformatician, Education Researcher</p>
 							</header>
 
 						</div>
@@ -50,8 +53,24 @@
 										<li><a href="#">Veroeros feugiat</a></li>
 									</ul>
 								</li>-->
+                                <li>
+									<a href="cv.html">CV</a>
+									<ul>
+										<li><a href="cv.html#education">Education</a></li>
+                                        <li><a href="cv.html#work">Work</a></li>
+                                        <li>
+                                            <a href="cv.html#projects">Projects <div style="float:right">▻</div></a>
+											<ul>
+                                                <li><a href="cv.html#software_engineering">Software Engineering</a></li>
+												<li><a href="cv.html#bioinformatics">Bioinformatics</a></li>
+												<li><a href="cv.html#education_research">Education</a></li>
+											</ul>
+										</li>
+                                        <li><a href="cv.html#organizations">Organizations</a></li>
+                                        <li><a href="cv.html#references">References</a></li>
+									</ul>
+								</li>
 								<li><a href="writing.html">Writing</a></li>
-								<li><a href="resume.html">Resume</a></li>
 								<!--<li><a href="no-sidebar.html">No Sidebar</a></li>-->
 							</ul>
 						</nav>
@@ -77,23 +96,31 @@
 							<header>
 								<h3><a href="https://github.com/sabeelmansuri/Scriptor" target="_blank">Scriptor<br><br></a></h3>
 							</header>
-							<p>A search application for UC San Diego podcasts that leverages speech-to-text.</p>
+							<p>Speech-to-text driven search application for UC San Diego podcasts.</p>
+						</article>
+                        
+                        <article>
+							<a href="https://devpost.com/software/virtus-a14wpr" target="_blank" class="image featured"><img src="images/Virtus.png" alt="" /></a>
+							<header>
+								<h3><a href="https://devpost.com/software/virtus-a14wpr" target="_blank">Virtus<br><br></a></h3>
+							</header>
+							<p>Personalized education without the limitations of a physical room.</p>
+						</article>
+                        
+                        <article>
+							<a href="https://stepik.org/63429" target="_blank" class="image featured"><img src="images/Search.png" alt="" /></a>
+							<header>
+								<h3><a href="https://stepik.org/63429" target="_blank">Intro. to Adversarial Search<br><br></a></h3>
+							</header>
+							<p>Stepik course for introducing new programmers to basic AI paradigms.</p>
 						</article>
 
 						<article>
 							<a href="https://github.com/sabeelmansuri/Bioinformatics-Crash-Course" target="_blank" class="image featured"><img src="images/UBIC.png" alt="" /></a>
 							<header>
-								<h3><a href="https://github.com/sabeelmansuri/Bioinformatics-Crash-Course" target="_blank">The Bioinformatics Crash Course</a></h3>
+								<h3><a href="https://github.com/sabeelmansuri/Bioinformatics-Crash-Course" target="_blank">Bioinformatics Crash Course<br><br></a></h3>
 							</header>
-							<p>A year-long course on basic bioinformatics for college freshmen.</p>
-						</article>
-
-						<article>
-							<a href="#" class="image featured" target="_blank"><img src="images/Search.png" alt="" /></a>
-							<header>
-								<h3><a href="https://stepik.org/course/55175/" target="_blank">Introduction to Adversarial Search (WIP)</a></h3>
-							</header>
-							<p>A week-long Stepik course to build an intelligent solver for the game 2048.</p>
+							<p>Course on basic bioinformatics concepts, techniques, and tools.</p>
 						</article>
 
 						<article>
@@ -101,7 +128,7 @@
 							<header>
 								<h3><a href="https://github.com/sabeelmansuri/Nanopore-Genome-Assembly/blob/master/README.md" target="_blank">Genome Assembly<br><br></a></h3>
 							</header>
-							<p>A pipeline for assembling a full genome from Oxford Nanopore sequenced DNA.</p>
+							<p>Pipeline for <i>de novo</i> assembly of Oxford Nanopore-sequenced DNA.</p>
 						</article>
 					</div>
 				</section>

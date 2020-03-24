@@ -23,7 +23,34 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+    }
+
+div.cv_right_info {
+    float: right;
+    background-color: #ef8376;
+    color: white;
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    font-weight: 400;
+}
+
+div.cv_right_spacer {
+    float: right;
+    color: #ef8376;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-weight: 400;
+}
+
+.award {
+    color: #eed202 !important;
+    font-weight: 400 !important;
+    margin-bottom: 0em !important;
+}
+
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -31,6 +58,11 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+}
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
 }
 
 ol, ul {
@@ -89,7 +121,11 @@ input, select, textarea {
 		line-height: 1.85em;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
+        -ms-overflow-style: none;
 	}
+body.no-scrollbar::-webkit-scrollbar {
+    display: none
+}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -124,6 +160,14 @@ input, select, textarea {
 	h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong {
 		font-weight: 600;
 	}
+
+    h1.glue_to_left {
+        float: left;
+    }
+    
+    h1.glue_to_right {
+        float: right;
+    }
 
 	h2 {
 		font-size: 2.85em;
@@ -202,6 +246,10 @@ input, select, textarea {
 		border-top: solid 1px rgba(128, 128, 128, 0.2);
 		border-bottom: solid 1px rgba(128, 128, 128, 0.2);
 	}
+    hr.cv_hr {
+        top: 0em;
+        margin-bottom: 1em;
+    }
 
 		hr:before, hr:after {
 			content: '';
