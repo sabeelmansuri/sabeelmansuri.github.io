@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="icon" href="images/Sabeel.png">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="no-sidebar is-preload no-scrollbar">
@@ -21,7 +22,7 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1>Curriculum Vitae</h1>
+                                <h1>Curriculum Vitae</h1>
 							</header>
 						</div>
 
@@ -53,7 +54,7 @@
 										<li><a href="cv.html#education">Education</a></li>
                                         <li><a href="cv.html#work">Work</a></li>
                                         <li>
-                                            <a href="cv.html#projects">Projects <div style="float:right">▻</div></a>
+                                            <a href="cv.html#projects">Projects <div class="nav_arrow">▻</div></a>
 											<ul>
                                                 <li><a href="cv.html#software_engineering">Software Engineering</a></li>
 												<li><a href="cv.html#bioinformatics">Bioinformatics</a></li>
@@ -92,12 +93,12 @@
                             <hr class="cv_hr">
                             <div id="work">
                                 <h3>Work<br><br></h3>
-                                <div id="work_amazon_ft">
+                                <!--<div id="work_amazon_ft">
                                     <div class="timestamp cv_right_info">Oct '20</div>
                                     <h1>Incoming Software Development Engineer</h1>
                                     <h4>Amazon.com</h4>
-                                    <p>This October, I will join Amazon Web Services to _.</p>
-                                </div>
+                                    <p class="cv_desc">This October, I will join Amazon Web Services to design scalable infrastructures.</p>
+                                </div>-->
 
                                 <div id="work_cse_tutor">
                                     <div class="timestamp cv_right_info">Present</div>
@@ -105,7 +106,7 @@
                                     <div class="timestamp cv_right_info">Apr '20</div>
                                     <h1>Head Tutor</h1>
                                     <h4>Computer Science & Engineering Department @ UC San Diego</h4>
-                                    <p>I currently serve as the head tutor for CSE 100 - Advanced Data Structures. My responsibilities include __.</p>
+                                    <p class="cv_desc">I serve as the head tutor for CSE 100 - Advanced Data Structures. Due to COVID-19, this quarter is being offered remotely. My responsibilities include facilitating online tutoring, answering students' questions, and hold 1:1 tutoring sessions to debug students' work.</p>
                                 </div>
                                 
                                 <div id="work_research_lead">
@@ -114,7 +115,7 @@
                                     <div class="timestamp cv_right_info">Jan '20</div>
                                     <h1>Research Lead</h1>
                                     <h4>University of California, San Diego</h4>
-                                    <p>This is my work @ _.</p>
+                                    <p class="cv_desc">I lead a team of students who research the applications of computer science in developing educational tools. We actively implement new pedagogical techniques in local high school classrooms to determine their efficacy.</p>
                                 </div>
                                 
                                 <div id="work_amazon_intern">
@@ -123,7 +124,7 @@
                                     <div class="timestamp cv_right_info">Jun '19</div>
                                     <h1>Software Development Engineer Intern</h1>
                                     <h4>Amazon.com</h4>
-                                    <p>This is my work @ _.</p>
+                                    <p class="cv_desc">I worked on the Amazon Family team to redesign our product recommendation tool, leveraging machine-learning principles to generate product rankings from customer behavior. The project featured an extensible full-stack design to open the software to all teams across Amazon.</p>
                                 </div>
                                 
                                 <div id="work_research_assistant">
@@ -132,7 +133,7 @@
                                     <div class="timestamp cv_right_info">Jan '18</div>
                                     <h1>Computational Research Assistant</h1>
                                     <h4>Scripps Institute of Oceanography</h4>
-                                    <p>This is my work @ _.</p>
+                                    <p class="cv_desc">As a Computational Research Assistant, I worked exclusively on analyzing genetic data. I developed Python pipelines for processing genomic datasets, designed shell scripts for optimizing workflows, and assembled Antarctic DNA using state-of-the-art bioinformatics techniques.</p>
                                 </div>
                                 
                                 <div id="work_bravado">
@@ -141,7 +142,7 @@
                                     <div class="timestamp cv_right_info">Jul '18</div>
                                     <h1>Product Management Intern</h1>
                                     <h4>Bravado</h4>
-                                    <p>This is my work @ _.</p>
+                                    <p class="cv_desc">I served a swiss-army-knife role at Bravado, performing ideation & design sandboxing for major product releases, full-stack web development, and cross-platform quality assurance engineering. I helped perform a data-driven UX overhaul for new user onboarding and a search autocomplete optimization with a 90% speed-up.</p>
                                 </div>  
                                   
                                 
@@ -155,19 +156,19 @@
                                     <div class="timestamp cv_right_info">React + Python</div>
                                     <div id="scriptor" style="margin-left:1em">
                                         <h1>Scriptor</h1>
-                                        <p class="timestamp award">Awarded 1<sup>st</sup> Place Software Engineering Spring 2019</p>
-                                        <p>Scriptor is a solution for streamlining studying at the University of California, San Diego. 
+                                        <p class="timestamp award" style="text-align: left"><img src="images/Award.png" style="vertical-align: sub; margin-bottom: 0px" height="20em"> Best Software Engineering Project, Spring 2019</p>
+                                        <p class="cv_desc">Scriptor is a solution for streamlining studying at the University of California, San Diego. 
 
-                                            Scriptor uses speech-to-text technology to process and index the UC San Diego Podcast System. This allows students to search for keywords and instantly be presented with precise timestamps in podcasts that match the information the want, efficiently parsing through the vast database so students don't have to. Scriptor wraps this functionality with a personalized interface, allowing users to favorite, save their history, and more. Happy podcasting!</p>
-                                        <p style="color:#ef8376; font-weight: 400"><a href="https://github.com/sabeelmansuri/Scriptor">View the Scriptor codebase here</a>.</p>
+                                            Scriptor uses speech-to-text technology to process and index the UC San Diego Podcast System. This allows students to search for keywords and instantly be presented with precise timestamps in podcasts that match the information they want, efficiently parsing through a vast database so students don't have to. Scriptor wraps this functionality with a personalized interface, allowing users to favorite, save their history, and more.</p>
+                                        <p style="color:#ef8376; font-weight: 400"><a target="_blank" href="https://github.com/sabeelmansuri/Scriptor">View the Scriptor codebase here</a>.</p>
                                     </div>
                                     
                                     <div class="timestamp cv_right_info">React + Firebase</div>
                                     <div id="virtus" style="margin-left:1em">
                                         <h1>Virtus</h1>
-                                        <p class="timestamp award">Winner - SD Hacks 2019</p>
-                                        <p>Virtus is a scalable solution for personalized education that makes virtual office hours more productive and efficient for students and instructors. Instructors can register their class, set up a broadcast, and host office hours remotely. Students can then join the stream, submit questions to the instructor, and collaborate with other students in a chatroom, gaining a personalized education without the limitations of a physical room.</p>
-                                        <p style="color:#ef8376; font-weight: 400"><a href="https://devpost.com/software/virtus-a14wpr">Learn more about Virtus here</a>.</p>
+                                        <p class="timestamp award" style="text-align: left"><img src="images/Award.png" style="vertical-align: sub; margin-bottom: 0px" height="20em"> Winner - SD Hacks 2019</p>
+                                        <p class="cv_desc">Virtus is a scalable solution for personalized education that makes virtual office hours more productive and efficient for students and instructors. Instructors can register their class, set up a broadcast, and host office hours remotely. Students can then join the stream, submit questions to the instructor, and collaborate with other students in a chatroom, gaining a personalized education without the limitations of a physical room.</p>
+                                        <p style="color:#ef8376; font-weight: 400"><a target="_blank" href="https://devpost.com/software/virtus-a14wpr">Learn more about Virtus here</a>.</p>
                                     </div>
                                 </div>
                                 
@@ -177,32 +178,32 @@
                                     <div id="crash_course" style="margin-left:1em">
                                         <div class="timestamp cv_right_info"></div>
                                         <h1>Bioinformatics Crash Course</h1>
-                                        <p>The Bioinformatics Crash Course is a year-long introductory sequence of lessons intended to introduce aspiring bioinformaticans to practical, lab-applicable skills. For years, it has served as students' first exposure to bioinformatics due to the current lack of an introductory bioinformatics series at UC San Diego.</p>
+                                        <p class="cv_desc">The Bioinformatics Crash Course is a year-long introductory sequence of lessons intended to introduce aspiring bioinformaticians to practical, lab-applicable skills. For years, it has served as students' first exposure to bioinformatics due to the current lack of an introductory bioinformatics series at UC San Diego.</p>
                                         
-                                        <p style="color:#ef8376; font-weight: 400"><a href="https://github.com/sabeelmansuri/Bioinformatics-Crash-Course">The Crash Course is fully open-source and available online here.</a></p>
+                                        <p style="color:#ef8376; font-weight: 400"><a target="_blank" href="https://github.com/sabeelmansuri/Bioinformatics-Crash-Course">The Crash Course is fully open-source and available online here.</a></p>
                                     </div>
                                     
                                     <div class="timestamp cv_right_info">Bash</div>
                                     <div id="genome_assembly" style="margin-left:1em">
                                         <div class="timestamp cv_right_info"></div>
                                         <h1>Oxford-Nanopore Genome Assembly</h1>
-                                        <p>Oxford-Nanopore sequencing, which is slowly moving towards becoming the new standard for genome sequencing, was in its infancy when I was given an opportunity to perform a <i>de novo</i> assembly. After successfully assembling the genome of a local swamp bacteria, I published a tutorial on how to process, assemble, and annotate Oxford-Nanopore data.</p>
+                                        <p class="cv_desc">Oxford-Nanopore sequencing, which is slowly moving towards becoming the new standard for genome sequencing, was in its infancy when I was given an opportunity to perform a <i>de novo</i> assembly. After successfully assembling the genome of a local swamp bacteria, I published a tutorial on how to process, assemble, and annotate Oxford-Nanopore data.</p>
                                         
-                                        <p style="color:#ef8376; font-weight: 400"><a href="https://www.polarmicrobes.org/tutorial-nanopore-analysis-pipeline/">The tutorial is published here.</a></p>
+                                        <p style="color:#ef8376; font-weight: 400"><a target="_blank" href="https://www.polarmicrobes.org/tutorial-nanopore-analysis-pipeline/">A step-by-step assembly is published here.</a></p>
                                     </div>
                                     
                                     <div class="timestamp cv_right_info">Markdown</div>
                                     <div id="epigenomics" style="margin-left:1em">
                                         <div class="timestamp cv_right_info"></div>
                                         <h1>Introduction to Epigenomics</h1>
-                                        <p>I co-authored an introductory bioinformatics-driven lesson on epigenomics, which is the analysis of gene expression that is not attributable to the DNA sequence of a genome. It covers core epigenomic modifications and analysis techniques. It is intentionally written to accessible to novice learners with little prior knowledge and, like the <a href="#crash_course">Bioinformatics Crash Course</a> above, introduce students to the field. </p>
+                                        <p class="cv_desc">I co-authored an introductory bioinformatics-driven lesson on epigenomics, which is the analysis of gene expression that is not attributable to the DNA sequence of a genome. It covers core epigenomic modifications and analysis techniques. It is intentionally written to accessible to novice learners with little prior knowledge and, like the <a href="#crash_course">Bioinformatics Crash Course</a> above, introduce students to the field. </p>
                                         
                                         
-                                        <p style="color:#ef8376; font-weight: 400"><a href="https://github.com/sabeelmansuri/Epigenomics/">The lesson is available here.</a></p>
+                                        <p style="color:#ef8376; font-weight: 400"><a target="_blank" href="https://github.com/sabeelmansuri/Epigenomics/">The lesson is available here.</a></p>
                                     </div>
                                 </div>
                                 
-                                <div id="education_research">
+                                <div id="eduresearch">
                                     <h5>Education</h5>
                                     <div class="timestamp cv_right_info">Present</div>
                                     <div class="timestamp cv_right_spacer">—</div>
@@ -210,7 +211,7 @@
                                     <div id="cse_6" style="margin-left:1em">
                                         <div class="timestamp cv_right_info"></div>
                                         <h1>CSE 6: Intro. to Comp. Sci. & OOP: Python</h1>
-                                        <p>I'm currently writing an interactive, adaptive textbook for CSE 6, a new fully-online introductory computer science course that will be offered at campuses accross the University of California. It embraces an active-learning approach that challenges students to think critically and diagnose their own learning breakdowns.</p>
+                                        <p class="cv_desc">I'm currently writing an interactive, adaptive textbook for CSE 6, a new fully-online introductory computer science course that will be offered at campuses across the University of California. It embraces an active-learning approach that challenges students to think critically and diagnose their own learning breakdowns.</p>
                                     </div>
                                     
                                     <div class="timestamp cv_right_info">Present</div>
@@ -219,7 +220,9 @@
                                     <div id="cse_199" style="margin-left:1em">
                                         <div class="timestamp cv_right_info"></div>
                                         <h1>CSE 199: Development of Novel Educational Techniques</h1>
-                                        <p>This is my project _</p>
+                                        <p class="cv_desc">In partnership with <a target="_blank"href="https://hkn.ucsd.edu/">IEEE - Eta Kappa Nu</a>, I founded and led an accredited, four-unit course at UC San Diego for conducting education research. The poster we presented on our initiative at the <a target="_blank" href="http://www.ccsc.org/southwestern/index.php">13th Consortium for Computing Sciences in Colleges Southwest Region Conference</a> is linked below.</p>
+                                        
+                                        <p style="color:#ef8376; font-weight: 400"><a target="_blank" href="199_poster.pdf">What to do after AP CS? A case study on short technical modules for post-AP-exam high school students<br >Sabeel Mansuri, Hannah Zhou, Hemanth Battu, Alex Fong, Tiffany Ho, Eric Xiao, Niema Moshiri</a></p>
                                     </div>
                                     
                                     <div class="timestamp cv_right_info">Mar '20</div>
@@ -228,7 +231,9 @@
                                     <div id="tic_tac_toe" style="margin-left:1em">
                                         <div class="timestamp cv_right_info"></div>
                                         <h1>Introduction to Adversarial Search</h1>
-                                        <p>This is my project _</p>
+                                        <p class="cv_desc">I was the lead author of a mini-course for AP Computer Science students that used an active-learning approach to teaching artificial intelligence. Students learn object-oriented programming principles, Minimax, and complete the course by building their own rational Tic-Tac-Toe bot.</p>
+                                        
+                                        <p style="color:#ef8376; font-weight: 400"><a target="_blank" href="https://stepik.org/63429">Take my course here (for free!).</a></p>
                                     </div>
                                     
                                     
@@ -243,18 +248,18 @@
                                     <div class="timestamp cv_right_info"></div>
                                     <div class="timestamp cv_right_spacer">—</div>
                                     <div class="timestamp cv_right_info"></div>
-                                    <h1>IEEE - Eta Kappa Nu</h1>
+                                    <h1>IEEE - Eta Kappa Nu (HKN)</h1>
                                     <h4>Officer</h4>
-                                    <p>At this organization _.</p>
+                                    <p class="cv_desc">HKN is the official honors society of the Jacobs School of Engineering at UC San Diego. I served as an officer from 2019-2020, founding HKN's Computer Science Outreach division. We connected local high schools with the resources and opportunities offered at UC San Diego. We also facilitated remote instruction during the COVID-19 pandemic.</p>
                                 </div>
                                 
                                 <div id="ubic">
                                     <div class="timestamp cv_right_info"></div>
                                     <div class="timestamp cv_right_spacer">—</div>
                                     <div class="timestamp cv_right_info"></div>
-                                    <h1>Undergraduate Bioinformatics Club</h1>
+                                    <h1>Undergraduate Bioinformatics Club (UBIC)</h1>
                                     <h4>Ambassador and Crash Course Developer</h4>
-                                    <p>At this organization _.</p>
+                                    <p class="cv_desc">UBIC is a not-for-profit organization dedicated to furthering bioinformatics initiatives at UC San Diego. From 2017-2018, I was the main contact point for recruiting industry and academia representatives. From 2018-2020, I developed and offered the <a target="_blank" href="https://github.com/sabeelmansuri/Bioinformatics-Crash-Course">Bioinformatics Crash Course</a> to hundreds of undergraduate and graduate students.</p>
                                 </div>
                             </div>
                             

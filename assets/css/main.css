@@ -50,7 +50,31 @@ div.cv_right_spacer {
     margin-bottom: 0em !important;
 }
 
+.sabeel {
+    width: 10% !important;
+    max-height: 100% !important;
+    max-width: 100% !important;
+    margin: 1em;
+    border-radius: 10px;
+    float: left;
+}
 
+.cv_desc {
+    width: 86%
+}
+
+@media screen and (max-width: 736px) {
+    .cv_desc {
+        width: 100%
+    }
+    .nav_arrow {
+        display: none;
+    }
+}
+
+.nav_arrow {
+    float:right;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2224,10 +2248,10 @@ body.no-scrollbar::-webkit-scrollbar {
 
 	#header {
 		position: relative;
-		background-image: url("../../images/header.jpg");
+		background-image: url("../../images/header2.jpg");
 		background-size: cover;
 		background-position: center center;
-		background-attachment: fixed;
+		// background-attachment: fixed;
 		color: #fff;
 		text-align: center;
 		padding: 7.5em 0 2em 0;
@@ -2458,8 +2482,10 @@ body.no-scrollbar::-webkit-scrollbar {
 	#banner {
 		background: #fff;
 		text-align: center;
-		padding: 4.5em 0 4.5em 0;
-		margin-bottom: 0;
+		padding: 1%;
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 0;
 	}
 
 		#banner header > p {
@@ -2726,11 +2752,6 @@ body.no-scrollbar::-webkit-scrollbar {
 
 		/* Banner */
 
-			#banner {
-				padding-left: 2em;
-				padding-right: 2em;
-			}
-
 		/* Footer */
 
 			#footer {
@@ -2983,16 +3004,16 @@ body.no-scrollbar::-webkit-scrollbar {
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
-				-moz-transform: translateY(-50vh);
-				-webkit-transform: translateY(-50vh);
-				-ms-transform: translateY(-50vh);
-				transform: translateY(-50vh);
+				-moz-transform: translateY(-59vh);
+				-webkit-transform: translateY(-59vh);
+				-ms-transform: translateY(-59vh);
+				transform: translateY(-59vh);
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				height: 16vh;
+				height: 59vh;
 				left: 0;
 				overflow-y: auto;
 				position: fixed;
@@ -3065,17 +3086,17 @@ body.no-scrollbar::-webkit-scrollbar {
 				}
 
 			body.navPanel-visible #page-wrapper {
-				-moz-transform: translateY(16vh);
-				-webkit-transform: translateY(16vh);
-				-ms-transform: translateY(16vh);
-				transform: translateY(16vh);
+				-moz-transform: translateY(59vh);
+				-webkit-transform: translateY(59vh);
+				-ms-transform: translateY(59vh);
+				transform: translateY(59vh);
 			}
 
 			body.navPanel-visible #navButton {
-				-moz-transform: translateY(16vh);
-				-webkit-transform: translateY(16vh);
-				-ms-transform: translateY(16vh);
-				transform: translateY(16vh);
+				-moz-transform: translateY(59vh);
+				-webkit-transform: translateY(59vh);
+				-ms-transform: translateY(59vh);
+				transform: translateY(59vh);
 			}
 
 			body.navPanel-visible #navPanel {
@@ -3139,9 +3160,6 @@ body.no-scrollbar::-webkit-scrollbar {
 
 		/* Banner */
 
-			#banner {
-				padding: 3em 2em 3em 2em;
-			}
 
 		/* Sidebar */
 
