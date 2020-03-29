@@ -3004,16 +3004,16 @@ body.no-scrollbar::-webkit-scrollbar {
 				-webkit-backface-visibility: hidden;
 				-ms-backface-visibility: hidden;
 				backface-visibility: hidden;
-				-moz-transform: translateY(-59vh);
-				-webkit-transform: translateY(-59vh);
-				-ms-transform: translateY(-59vh);
-				transform: translateY(-59vh);
+				-moz-transform: translateY(-58vh);
+				-webkit-transform: translateY(-58vh);
+				-ms-transform: translateY(-58vh);
+				transform: translateY(-58vh);
 				-moz-transition: -moz-transform 0.5s ease;
 				-webkit-transition: -webkit-transform 0.5s ease;
 				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				display: block;
-				height: 59vh;
+				height: 58vh;
 				left: 0;
 				overflow-y: auto;
 				position: fixed;
@@ -3086,17 +3086,17 @@ body.no-scrollbar::-webkit-scrollbar {
 				}
 
 			body.navPanel-visible #page-wrapper {
-				-moz-transform: translateY(59vh);
-				-webkit-transform: translateY(59vh);
-				-ms-transform: translateY(59vh);
-				transform: translateY(59vh);
+				-moz-transform: translateY(58vh);
+				-webkit-transform: translateY(58vh);
+				-ms-transform: translateY(58vh);
+				transform: translateY(58vh);
 			}
 
 			body.navPanel-visible #navButton {
-				-moz-transform: translateY(59vh);
-				-webkit-transform: translateY(59vh);
-				-ms-transform: translateY(59vh);
-				transform: translateY(59vh);
+				-moz-transform: translateY(58vh);
+				-webkit-transform: translateY(58vh);
+				-ms-transform: translateY(58vh);
+				transform: translateY(58vh);
 			}
 
 			body.navPanel-visible #navPanel {
