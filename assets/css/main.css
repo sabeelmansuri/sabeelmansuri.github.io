@@ -63,6 +63,15 @@ div.cv_right_spacer {
     width: 86%
 }
 
+.cv_subtitle {
+    font-size: 0.90em;
+    margin-top: 0.25em;
+}
+
+.cv_first {
+    margin-top: 0.50em;
+}
+
 @media screen and (max-width: 736px) {
     .cv_desc {
         width: 100%
