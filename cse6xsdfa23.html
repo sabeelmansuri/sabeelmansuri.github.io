@@ -1,248 +1,328 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperbolic by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
-<html>
-	<head>
-		<title>CSE6 XSD FA23</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-        <link rel="icon" href="images/Award.png">
-        <meta property=og:image content=https://sabeelmansuri.com/images/Py.png />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<!-- saved from url=(0029)/dark/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"> <title>Sabeel Mansuri</title>
+<meta name="description" content="">
+<meta property=og:image content=/images/Sabeel.png />
+<link rel="icon" href="images/Sabeel.png">
+<link rel="stylesheet" href="./newer_files/normalize.css">
+<link rel="stylesheet" href="./newer_files/terminal.min.css">
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<style>
+    .components-grid {
+      display: grid;
+      grid-column-gap: 1.4em;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    .image-grid {
+      display: grid;
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(calc(var(--page-width) / 12), 1fr)
+      );
+    }
 
-				<!-- Header -->
-					<section id="header">
+    @media only screen and (min-width: 70em) {
+      .components-grid {
+        grid-template-columns: 3fr 9fr;
+      }
 
-						<!-- Logo -->
-							<a href="/" class="logo"><strong>Sabeel</strong> Mansuri</a>
+      .components-grid aside {
+        position: sticky;
+        top: calc(var(--global-space) * 2);
+      }
+    }
+  </style>
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a href="/">Home</a></li>
-                                    <li class="current">
-										<a href="/cse6xsdfa23" class="icon solid fa-angle-down">Teaching</a>
-										<ul>
-											<li><a href="/cse6xsdfa23">CSE6 XSD FA23</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="/cv" class="icon solid fa-angle-down">Curriculum Vitae</a>
-										<ul>
-											<li><a href="/cv#education">Education</a></li>
-											<li><a href="/cv#work">Work</a></li>
-                                            <li>
-												<a href="/cv#projects">Projects</a>
-												<ul>
-													<li><a href="/cv#software_engineering">Software Engineering</a></li>
-													<li><a href="/cv#eduresearch">Education</a></li>
-													<li><a href="/cv#bioinformatics">Bioinformatics</a></li>
-												</ul>
-											</li>
-											<li><a href="/cv#organizations">Organizations</a></li>
-										</ul>
-									</li>
-								</ul>
-							</nav>
+<style>
+  :root {
+      --global-font-size: 15px;
+      --global-line-height: 1.4em;
+      --global-space: 10px;
+      --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+      serif;
+      --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+      serif;
+      --background-color: #FCF6E5;
+      --page-width: 60em;
+      --font-color: #697A82;
+      --invert-font-color: #FCF6E5;
+      --secondary-color: #697A82;
+      --tertiary-color: #697A82;
+      --primary-color: #4689CC;
+      --error-color: #7d7b7c;
+      --progress-bar-background: #FCF6E5;
+      --progress-bar-fill: #4689CC;
+      --code-bg-color: #FCF6E5;
+      --input-style: solid;
+      --display-h1-decoration: none;
+  }
 
-					</section>
+  h4 {
+    color: #58A39B;
+  }
 
-				<!-- Section -->
-					<section class="wrapper style1">
-						<div class="inner svm_cv">
-							<header class="major special">
-								<h1>Intro. to Comp. Sci. & OOP: Python</h1>
-							</header>
-                            <h2>CSE6 XSD FALL 2023</h2>
-                            <h4 id='location'>UC San Diego, Department of Extended Studies</h4>
-							<hr class="" />
-                            <div id="introduction">
-                                <h3 style="color: #e1706e">Introduction</h3>
-                                <p>Welcome to CSE6 XSD, an introductory computer science course offered by the Department of Extended Studies at UC San Diego. The course will cover a range of programming topics, including basic data types, loops and iteration, basic data structures, memory models, conditional statements, recursion, algorithm time complexity, analysis, class design, inheritance, and more.</p>
-                                <br/>
-                                <p><b>The information on this page is subject to change.</b></p>
-                            </div>
-                            <hr />
-                            <div id="basics">
-                                <h3 style="color: #e1706e">Basics</h3>
-                                <div id="staff">
-                                    <h4>Course Staff</h4>
-                                    <br/>
-                                    <ul>
-                                        <li><b>Sabeel Mansuri (Instructor)</b></li>
-                                        <li><b>Daniela Perry (Assistant Teacher)</b></li>
-                                    </ul>
-                                </div>
+  a {
+    color: #C65087;
+  }
+</style>
 
-                                <div id="pss">
-                                    <h4><s>Lectures</s> Problem Solving Sessions</h4>
-                                    <p>In place of traditional lectures, this course offers synchronous Problem Solving Sessions (PSSs) on Tuesdays, and Thursdays from 5 PM to 6 PM, during which the instructor will review key concepts, answer questions, and work through problems. These sessions will be recorded. While synchronous attendance is not required, <b>all students are expected to either attend synchronously or watch the recordings (or both). All material covered in PSSs is fair-game for quizzes and the final exam!</b> The PSSs will be held via the Zoom link available on Canvas.</p>
-                                    <br>
-                                    <p>Most of the course content will be presented via an online platform called Stepik, which will serve as your interactive textbook.</p>
-                                </div>
+    <!-- <style>
+        :root {
+            --global-font-size: 15px;
+            --global-line-height: 1.4em;
+            --global-space: 10px;
+            --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+            serif;
+            --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+            serif;
+            --background-color: #222225;
+            --page-width: 60em;
+            --font-color: #e8e9ed;
+            --invert-font-color: #222225;
+            --secondary-color: #a3abba;
+            --tertiary-color: #a3abba;
+            --primary-color: #62c4ff;
+            --error-color: #ff3c74;
+            --progress-bar-background: #3f3f44;
+            --progress-bar-fill: #62c4ff;
+            --code-bg-color: #3f3f44;
+            --input-style: solid;
+            --display-h1-decoration: none;
+        }
+    </style> -->
+</head>
+<body class="terminal">
+</div>
+    <div class="container">
+  <div class="terminal-nav">
+    <header class="terminal-logo">
+      <div class="logo terminal-prompt"><a href="/" class="no-style">Sabeel Mansuri - Teaching</a></div>
+    </header>
+    <nav class="terminal-menu">
+      <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+        <li><a href="/" class="menu-item"><span>Home</span></a><meta property="position"></li>
+        <li property="itemListElement" typeof="ListItem"><a href="/cse6xsdfa23" property="item" typeof="WebPage" class="menu-item"><span property="name">Teaching</span></a><meta property="position" content="2"></li>
+        <li property="itemListElement" typeof="ListItem"><a href="/cv" property="item" typeof="WebPage" class="menu-item"><span property="name">Curriculum Vitae</span></a><meta property="position" content="3"></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="container">
+  <hr>
+  <h2><span class="hljs-built_in">INTRO TO COMP. SCI. & OOP: PYTHON</span></h2>
+  <p>Welcome to CSE6 XSD, an introductory computer science course offered by the Department of Extended Studies at UC San Diego. The course will cover a range of programming topics, including basic data types, loops and iteration, basic data structures, memory models, conditional statements, recursion, algorithm time complexity, analysis, class design, inheritance, and more.</p>
+  <p><b>The information on this page is subject to change.</b></p>
 
-                                <div id="help">
-                                    <h4>Resources</h4>
-                                    <p>Building a support system of friends with whom you can struggle and work through the challenges you encounter is one of the best ways to seek help. You will quickly learn how much you can figure out working together!</p>
-                                    <br/>
-                                    <p>For additional help, there are two kinds of sessions you can attend. The first is open lab hours, where our fleet of tutors give one-on-one help with programming tasks and course content. This is the primary synchronous help mechanism, and is available at the times (and Zoom link) listed on Canvas.</p>
-                                    <br/>
-                                    <p>The second is office hours, which are held by the TA at the times (and Zoom link) listed on Canvas. Office hours are a great place for any kind of question about the course, from help with your assignment to clarifications about material in lecture to questions beyond what we cover in the course. Instructor office hours are available by appointment.</p>
-                                </div>
+  <hr>
+  <h2><span class="hljs-built_in">BASICS</span></h2>
+  <h4><span>COURSE STAFF</span></h4>
+  <ul>
+    <li>Sabeel Mansuri (Instructor)</li>
+    <li>Daniela Perry (Assistant Teacher)</li>
+</ul>
+<h4><s>LECTURES</s> PROBLEM SOLVING SESSIONS</h4>
+<p>In place of traditional lectures, this course offers synchronous Problem Solving Sessions (PSSs) on Tuesdays, and Thursdays from 5 PM to 6 PM, during which the instructor will review key concepts, answer questions, and work through problems. These sessions will be recorded. While synchronous attendance is not required, <b>all students are expected to either attend synchronously or watch the recordings (or both). All material covered in PSSs is fair-game for quizzes and the final exam!</b> The PSSs will be held via the Zoom link available on Canvas.</p>
+<p>Most of the course content will be presented via an online platform called Stepik, which will serve as your interactive textbook.</p>
+ 
+<h4>RESOURCES</h4>
+<p>Building a support system of friends with whom you can struggle and work through the challenges you encounter is one of the best ways to seek help. You will quickly learn how much you can figure out working together!</p>
+<p>For additional help, there are two kinds of sessions you can attend. The first is open lab hours, where our fleet of tutors give one-on-one help with programming tasks and course content. This is the primary synchronous help mechanism, and is available at the times (and Zoom link) listed on Canvas.</p>
+<p>The second is office hours, which are held by the TA at the times (and Zoom link) listed on Canvas. Office hours are a great place for any kind of question about the course, from help with your assignment to clarifications about material in lecture to questions beyond what we cover in the course. Instructor office hours are available by appointment.</p>
 
-                                <div id="links">
-                                    <h4>Useful Links</h4>
-                                    <ul>
-                                        <li><a target="_blank" href="https://extensioncanvas.ucsd.edu/">Canvas</a> - Canvas is the learning management system used to host this course including any announcements, course modules, and grades.</li>
-                                        <li><a target="_blank" href="https://stepik.org/">Stepik</a> - Stepik is the online textbook used to track all progress in the course.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <hr />
-                            <div id="schedule">
-                                <h3 style="color: #e1706e">Schedule</h3>
-                                <br/>
-                                <table class="alt">
-                                    <thead>
-                                        <tr>
-                                            <th>Week</th>
-                                            <th>Topic(s)</th>
-                                            <th>Quiz</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>One (10/2)</td>
-                                            <td>Python Syntax, Strings, Variables, Operator Precedence, Comments</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Two (10/9)</td>
-                                            <td>Boolean Logic, Conditionals, Short-Circuiting</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Three (10/16)</td>
-                                            <td>For-Loops, While-Loops, Break/Continue, Nesting</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Four (10/23)</td>
-                                            <td>Data Structures: Lists, Tuples, Sets, Dicts</td>
-                                            <td>Quiz 1: Ch. 1-3</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Five (10/30)</td>
-                                            <td>Functions, Default Parameters, Variable Arguments</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Six (11/6)</td>
-                                            <td>Recursion</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Seven (11/13)</td>
-                                            <td>Objects</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Eight (11/20)</td>
-                                            <td>Exception Handling, Custom Exceptions</td>
-                                            <td>Quiz 2: Ch. 4-7</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Nine (11/27)</td>
-                                            <td>File I/O, Serialization</td>
-                                            <td>-</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Ten (12/4)</td>
-                                            <td>Libraries</td>
-                                            <td>-</td>
-                                        </tr>
-                                    </tbody>
-                                    <tfoot>
-                                        <tr>
-                                            <td colspan="2"></td>
-                                        </tr>
-                                    </tfoot>
-                                </table>
-                            </div>
-                            <hr />
-                            <div id="grading">
-                                <h3 style="color: #e1706e">Policies</h3>
-                                <h4>Grading</h4>
-                                <ul>
-                                    <li><b>Code Challenges:</b> 50%</li>
-                                    <li><b>Exercise Breaks:</b> 20%</li>
-                                    <li><b>Quizzes:</b> 10%</li>
-                                    <li><b>Final Exam:</b> 20%</li>
-                                        <ul>
-                                            <li><b><u>You must pass the Final Exam to pass the course</u></b></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                                <p><span>By default, we will use the standard scale of 90%&mdash;100% = A, 80%&mdash;89.9% = B, 70%&mdash;79.9% = C, 60%&mdash;69.9% = D, and &lt;60% = F. These cutoffs may be lowered, if need be, but they will never be raised. In other words, we may make it </span><i><span>easier</span></i><span> to get a certain letter grade, but never harder. </span><b>Pluses and minuses will be given at the instructor's discretion.</b></p>
-                                <h4>Student Conduct</h4>
-                                <p>All Discover UC San Diego students are part of the UC San Diego community and are expected to follow university and UC-wide policies, including the <a target="_blank" href="https://studentconduct.ucsd.edu/procedures/index.html">Student Conduct Code</a>. The UC San Diego Student Conduct Code represents the pride and values that define our community, and include the <a target="_blank" href="https://ucsd.edu/about/principles.html">UC San Diego Principles of Community</a>, which further illustrate the expectations for all members of our community. The Code defines our community&rsquo;s applicable standards and authorizes the administration of student conduct at UC San Diego Extension. The Code applies to all UC San Diego undergraduate, graduate, professional school, and Extended Studies students.</p>
-                                <br/>
-                                <p>Reports of alleged violations involving sex offenses, including sexual assault and sexual misconduct, will be handled under the policies and procedures set forth in the <a href="https://catalog.ucsd.edu/about/policies/policies-on-shpp/index.html">University of California&rsquo;s Sexual Violence and Sexual Harassment Policy</a>. Reports of alleged violations of academic integrity will be handled under the policies and procedures set forth in the <a href="https://extendedstudies.ucsd.edu/getattachment/student-resources/student-rights-and-responsibilities/ACADEMIC_INTEGRITY_POLICY-(1).pdf.aspx?lang=en-US">UC San Diego Extended Studies Academic Integrity Policy</a>.</p>
-                                <br/>
-                                <p>For more information on each policy, see <a href="https://extendedstudies.ucsd.edu/student-resources/student-rights-and-responsibilities">Student Rights and Responsibilities</a>.</p>
-                                <h4>Academic Integrity</h4>
-                                <p>UC San Diego Extended Studies values life-long learning and the opportunity to serve individuals, organizations and the community by providing continuing education and degree-related programs that support academic, professional, economic and social development.</p>
-                                <p>To support our efforts, it is essential to create an environment where academics are achieved through one&rsquo;s own efforts. Discover UC San Diego students expect that academic study will be applied with honesty, responsibility to scholarship and with original thought. This is a shared responsibility between the Instructors, the Students, and the administration.</p>
-                                <p>Reports of alleged violations of academic integrity will be handled under the policies and procedures set forth in the <a href="https://extendedstudies.ucsd.edu/getattachment/student-resources/student-rights-and-responsibilities/ACADEMIC_INTEGRITY_POLICY-(1).pdf.aspx?lang=en-US">UC San Diego Extended Studies Academic Integrity Policy</a>.</p>
-                                <h4>Non-Discrimination and Sexual Harassment</h4>
-                                <p>The University of California, in accordance with applicable Federal and State law and University policy, does not discriminate based on race, color, national origin, religion, sex, gender identity, pregnancy, physical or mental disability, medical condition (cancer related or genetic characteristics), ancestry, marital status, age, sexual orientation, citizenship, or service in the uniformed services. The University also prohibits harassment on any of these bases, including sexual harassment, as well as sexual assault, domestic violence, dating violence, and stalking. This nondiscrimination policy covers admission, access, and treatment in university programs and activities.</p>
-                                <p>If students have questions about student-related nondiscrimination policies or concerns about possible discrimination or harassment, they should contact the Office for the Prevention of Harassment and Discrimination (OPHD) at (858) 534-8298, ophd@ucsd.edu, or reportbias.ucsd.edu. Students are encouraged to seek assistance as soon as possible, as time limits may apply to complaint resolution processes.</p>
-                                <h4>Drop Policy</h4>
-                                <p><span>Discover UC San Diego students must email all drop requests to&nbsp;</span><span><a href="mailto:discover4hs@ucsd.edu" target="_blank" rel="noopener" data-auth="NotApplicable" data-linkindex="0">discover4hs@ucsd.edu</a></span><span>.</span> Notifying the instructor of the intent to drop or not attending does not constitute dropping a course. Drops are effective as of the date on which Head Counselor, Alissa Tuter, receives the email request, regardless of when the student ceased attendance.</p>
-                                <h4>Drop Deadline</h4>
-                                <p>The deadline to drop the course without receiving a grade on your academic record is <b>TBD</b>. &nbsp;Students may file a petition for a retroactive drop, after the drop deadline if they are unable to continue enrollment for various reasons. For more information, view the <a href="https://extendedstudies.ucsd.edu/student-resources/student-rights-and-responsibilities">petition for exception to drop policy</a>.</p>
-                                <h4>Attendance Policy</h4>
-                                <p>All UC San Diego Discover courses have attendance requirements specific to the course and section. To review the attendance requirements please refer to the program information page or the syllabus for review.</p>
-                                <h4>Grading Criteria</h4>
-                                <p>Letter Grade: Each Discover UC San Diego student will be provided a grade between A+ and F that reflects your performance in the course which is included in your grade point average (GPA) calculation. A passing grade counts toward your earned credit hours.</p>
-                                <h4>Grade Changes and Appeals</h4>
-                                <p>All grades are determined by the instructor and are considered final when they are submitted. An instructor may request a change to a final grade if there has been an error in calculation or transcription of the grade.</p>
-                                <h4>Grade Appeal Procedure</h4>
-                                <p>Discover UC San Diego students who believe their grade was improperly assigned or that they received a grade based on non-academic criteria have the right to question and appeal the final grade. Grounds for an appeal are limited to administrative error, work turned in to the instructor that was not included in the total score, and/or improper grading procedures. No grade may be changed more than one calendar year from the time it was recorded.</p>
-                                <p>For more information, view our <a href="https://extendedstudies.ucsd.edu/student-resources/academic-information">Grade Appeal Procedure</a>.</p>
-                                <h4>Disability Services</h4>
-                                <p>In accordance with Section 504 of the Rehabilitation Act of 1973 and Americans with Disabilities Act of 1990, UC San Diego Extended Studies strives to provide equal access and an exceptional learning environment for all students.</p>
-                                <br/>
-                                <p>To complete the accommodation request form and set up a meeting to meet with our disability coordinator please click <a href="https://powerforms.docusign.net/6d1e803b-205a-4e8e-aa7f-55355feda818?env=na1&amp;acct=6371e373-11ff-4359-aa24-bf2ccbddc944&amp;accountId=6371e373-11ff-4359-aa24-bf2ccbddc944">here</a>.</p>
-                            </div>
-						</div>
-					</section>
+  <h4>USEFUL LINKS</h4>
+  <ul>
+      <li><a target="_blank" href="https://extensioncanvas.ucsd.edu/"><b>Canvas</b></a> - Canvas is the learning management system used to host this course including any announcements, course modules, and grades.</li>
+      <li><a target="_blank" href="https://stepik.org/"><b>Stepik</b></a> - Stepik is the online textbook used to track all progress in the course.</li>
+  </ul>
 
-				<!-- Footer -->
-					<section id="footer">
-						<ul class="icons"></ul>
-					</section>
+  <hr>
+  <h2><span class="hljs-built_in">SCHEDULE</span></h2>
+  <table class="alt">
+    <thead>
+        <tr>
+            <th>Week</th>
+            <th>Topic(s)</th>
+            <th>Quiz</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>One</td>
+            <td>Python Syntax, Strings, Variables, Operator Precedence, Comments</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Two</td>
+            <td>Boolean Logic, Conditionals, Short-Circuiting</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Three</td>
+            <td>For-Loops, While-Loops, Break/Continue, Nesting</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Four</td>
+            <td>Data Structures: Lists, Tuples, Sets, Dicts</td>
+            <td>Quiz 1: Ch. 1-3</td>
+        </tr>
+        <tr>
+            <td>Five</td>
+            <td>Functions, Default Parameters, Variable Arguments</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Six</td>
+            <td>Recursion</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Seven</td>
+            <td>Objects</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Eight</td>
+            <td>Exception Handling, Custom Exceptions</td>
+            <td>Quiz 2: Ch. 4-7</td>
+        </tr>
+        <tr>
+            <td>Nine</td>
+            <td>File I/O, Serialization</td>
+            <td>-</td>
+        </tr>
+        <tr>
+            <td>Ten</td>
+            <td>Libraries</td>
+            <td>-</td>
+        </tr>
+    </tbody>
+</table>
 
-			</div>
+<hr>
+<h2><span class="hljs-built_in">POLICIES</span></h2>
+<h4>GRADING</h4>
+<ul>
+    <li><b>Code Challenges:</b> 50%</li>
+    <li><b>Exercise Breaks:</b> 20%</li>
+    <li><b>Quizzes:</b> 10%</li>
+    <li><b>Final Exam:</b> 20%</li>
+        <ul>
+            <li><b><u>You must pass the Final Exam to pass the course</u></b></li>
+        </ul>
+    </li>
+</ul>
+<p><span>By default, we will use the standard scale of 90%&mdash;100% = A, 80%&mdash;89.9% = B, 70%&mdash;79.9% = C, 60%&mdash;69.9% = D, and &lt;60% = F. These cutoffs may be lowered, if need be, but they will never be raised. In other words, we may make it </span><i><span>easier</span></i><span> to get a certain letter grade, but never harder. </span><b>Pluses and minuses will be given at the instructor's discretion.</b></p>
+<h4>STUDENT CONDUCT</h4>
+<p>All Discover UC San Diego students are part of the UC San Diego community and are expected to follow university and UC-wide policies, including the <a target="_blank" href="https://studentconduct.ucsd.edu/procedures/index.html">Student Conduct Code</a>. The UC San Diego Student Conduct Code represents the pride and values that define our community, and include the <a target="_blank" href="https://ucsd.edu/about/principles.html">UC San Diego Principles of Community</a>, which further illustrate the expectations for all members of our community. The Code defines our community&rsquo;s applicable standards and authorizes the administration of student conduct at UC San Diego Extension. The Code applies to all UC San Diego undergraduate, graduate, professional school, and Extended Studies students.</p>
+<p>Reports of alleged violations involving sex offenses, including sexual assault and sexual misconduct, will be handled under the policies and procedures set forth in the <a href="https://catalog.ucsd.edu/about/policies/policies-on-shpp/index.html">University of California&rsquo;s Sexual Violence and Sexual Harassment Policy</a>. Reports of alleged violations of academic integrity will be handled under the policies and procedures set forth in the <a href="https://extendedstudies.ucsd.edu/getattachment/student-resources/student-rights-and-responsibilities/ACADEMIC_INTEGRITY_POLICY-(1).pdf.aspx?lang=en-US">UC San Diego Extended Studies Academic Integrity Policy</a>.</p>
+<p>For more information on each policy, see <a href="https://extendedstudies.ucsd.edu/student-resources/student-rights-and-responsibilities">Student Rights and Responsibilities</a>.</p>
+<h4>ACADEMIC INTEGRITY</h4>
+<p>UC San Diego Extended Studies values life-long learning and the opportunity to serve individuals, organizations and the community by providing continuing education and degree-related programs that support academic, professional, economic and social development.</p>
+<p>To support our efforts, it is essential to create an environment where academics are achieved through one&rsquo;s own efforts. Discover UC San Diego students expect that academic study will be applied with honesty, responsibility to scholarship and with original thought. This is a shared responsibility between the Instructors, the Students, and the administration.</p>
+<p>Reports of alleged violations of academic integrity will be handled under the policies and procedures set forth in the <a href="https://extendedstudies.ucsd.edu/getattachment/student-resources/student-rights-and-responsibilities/ACADEMIC_INTEGRITY_POLICY-(1).pdf.aspx?lang=en-US">UC San Diego Extended Studies Academic Integrity Policy</a>.</p>
+<h4>NON-DISCRIMINATION AND SEXUAL HARASSMENT</h4>
+<p>The University of California, in accordance with applicable Federal and State law and University policy, does not discriminate based on race, color, national origin, religion, sex, gender identity, pregnancy, physical or mental disability, medical condition (cancer related or genetic characteristics), ancestry, marital status, age, sexual orientation, citizenship, or service in the uniformed services. The University also prohibits harassment on any of these bases, including sexual harassment, as well as sexual assault, domestic violence, dating violence, and stalking. This nondiscrimination policy covers admission, access, and treatment in university programs and activities.</p>
+<p>If students have questions about student-related nondiscrimination policies or concerns about possible discrimination or harassment, they should contact the Office for the Prevention of Harassment and Discrimination (OPHD) at (858) 534-8298, ophd@ucsd.edu, or reportbias.ucsd.edu. Students are encouraged to seek assistance as soon as possible, as time limits may apply to complaint resolution processes.</p>
+<h4>DROP POLICY</h4>
+<p><span>Discover UC San Diego students must email all drop requests to&nbsp;</span><span><a href="mailto:discover4hs@ucsd.edu" target="_blank" rel="noopener" data-auth="NotApplicable" data-linkindex="0">discover4hs@ucsd.edu</a></span><span>.</span> Notifying the instructor of the intent to drop or not attending does not constitute dropping a course. Drops are effective as of the date on which Head Counselor, Alissa Tuter, receives the email request, regardless of when the student ceased attendance.</p>
+<h4>Drop Deadline</h4>
+<p>The deadline to drop the course without receiving a grade on your academic record is <b>TBD</b>. Students may file a petition for a retroactive drop, after the drop deadline if they are unable to continue enrollment for various reasons. For more information, view the <a href="https://extendedstudies.ucsd.edu/student-resources/student-rights-and-responsibilities">petition for exception to drop policy</a>.</p>
+<h4>ATTENDANCE POLICY</h4>
+<p>All UC San Diego Discover courses have attendance requirements specific to the course and section. To review the attendance requirements please refer to the program information page or the syllabus for review.</p>
+<h4>GRADING CRITERIA</h4>
+<p>Letter Grade: Each Discover UC San Diego student will be provided a grade between A+ and F that reflects your performance in the course which is included in your grade point average (GPA) calculation. A passing grade counts toward your earned credit hours.</p>
+<h4>GRADE CHANGES AND APPEALS</h4>
+<p>All grades are determined by the instructor and are considered final when they are submitted. An instructor may request a change to a final grade if there has been an error in calculation or transcription of the grade.</p>
+<h4>GRADE APPEAL PROCEDURE</h4>
+<p>Discover UC San Diego students who believe their grade was improperly assigned or that they received a grade based on non-academic criteria have the right to question and appeal the final grade. Grounds for an appeal are limited to administrative error, work turned in to the instructor that was not included in the total score, and/or improper grading procedures. No grade may be changed more than one calendar year from the time it was recorded.</p>
+<p>For more information, view our <a href="https://extendedstudies.ucsd.edu/student-resources/academic-information">Grade Appeal Procedure</a>.</p>
+<h4>DISABILITY SERVICES</h4>
+<p>In accordance with Section 504 of the Rehabilitation Act of 1973 and Americans with Disabilities Act of 1990, UC San Diego Extended Studies strives to provide equal access and an exceptional learning environment for all students.</p>
+<p>To complete the accommodation request form and set up a meeting to meet with our disability coordinator please click <a href="https://powerforms.docusign.net/6d1e803b-205a-4e8e-aa7f-55355feda818?env=na1&amp;acct=6371e373-11ff-4359-aa24-bf2ccbddc944&amp;accountId=6371e373-11ff-4359-aa24-bf2ccbddc944">here</a>.</p>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	</body>
-</html>
+</footer>
+
+                <hr>
+                <section>
+    <p>Sabeel Mansuri (c) 2024</p>
+</section>
+            </main>
+        </div>
+    </div>
+    <script src="./newer_files/highlight.min.js"></script>
+<script async="" defer="" src="./newer_files/buttons.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll("pre code").forEach(block => {
+            window.hljs.highlightBlock(block);
+        });
+
+        // Get the computed style of the root element (usually :root in CSS)
+        const rootStyle = getComputedStyle(document.documentElement);
+
+        // Function to update the display element with the CSS variable value, preserving inner span
+        function updateDisplayElementPreservingSpan(cssVariable, displayElementId) {
+            const value = rootStyle.getPropertyValue(cssVariable).trim();
+            const displayElement = document.getElementById(displayElementId);
+            if (displayElement) {
+                // Preserve the inner span if it exists
+                const spanElement = displayElement.querySelector('.color-preview');
+                if (spanElement) {
+                    displayElement.innerHTML = `<span class="color-preview" style="background-color: ${value};"></span>${value}`;
+                } else {
+                    displayElement.textContent = value;
+                }
+            }
+        }
+        // Update each display element with its corresponding CSS variable value
+        updateDisplayElementPreservingSpan('--global-font-size', 'css-global-font-size');
+        updateDisplayElementPreservingSpan('--global-line-height', 'css-global-line-height');
+        updateDisplayElementPreservingSpan('--global-space', 'css-global-space');
+        updateDisplayElementPreservingSpan('--font-stack', 'css-font-stack');
+        updateDisplayElementPreservingSpan('--mono-font-stack', 'css-mono-font-stack');
+        updateDisplayElementPreservingSpan('--background-color', 'css-background-color');
+        updateDisplayElementPreservingSpan('--font-color', 'css-font-color');
+        updateDisplayElementPreservingSpan('--invert-font-color', 'css-invert-font-color');
+        updateDisplayElementPreservingSpan('--primary-color', 'css-primary-color');
+        updateDisplayElementPreservingSpan('--secondary-color', 'css-secondary-color');
+        updateDisplayElementPreservingSpan('--error-color', 'css-error-color');
+        updateDisplayElementPreservingSpan('--progress-bar-background', 'css-progress-bar-background');
+        updateDisplayElementPreservingSpan('--progress-bar-fill', 'css-progress-bar-fill');
+        updateDisplayElementPreservingSpan('--code-bg-color', 'css-code-bg-color');
+        updateDisplayElementPreservingSpan('--block-background-color', 'css-block-background-color');
+        updateDisplayElementPreservingSpan('--input-style', 'css-input-style');
+        updateDisplayElementPreservingSpan('--display-h1-decoration', 'css-display-h1-decoration');
+    });
+</script>
+<!-- Fathom - beautiful, simple website analytics -->
+<script src="./newer_files/script.js" data-site="LCUDFNYO" defer=""></script>
+<!-- / Fathom -->
+</div></html>

@@ -1,178 +1,219 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperbolic by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
-<html>
-	<head>    
-		<title>Sabeel Mansuri</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-        <link rel="icon" href="images/Sabeel.png">
-        <meta property=og:image content=https://sabeelmansuri.com/images/Sabeel.png />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<!-- saved from url=(0029)/dark/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"> <title>Sabeel Mansuri</title>
+<meta name="description" content="">
+<meta property=og:image content=/images/Sabeel.png />
+<link rel="icon" href="images/Sabeel.png">
+<link rel="stylesheet" href="./newer_files/normalize.css">
+<link rel="stylesheet" href="./newer_files/terminal.min.css">
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<style>
+    .components-grid {
+      display: grid;
+      grid-column-gap: 1.4em;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    .image-grid {
+      display: grid;
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(calc(var(--page-width) / 12), 1fr)
+      );
+    }
 
-				<!-- Header -->
-					<section id="header" class="alt">
+    @media only screen and (min-width: 70em) {
+      .components-grid {
+        grid-template-columns: 3fr 9fr;
+      }
 
-						<!-- Logo -->
-							<a href="/" class="logo"><strong>Sabeel</strong> Mansuri</a>
+      .components-grid aside {
+        position: sticky;
+        top: calc(var(--global-space) * 2);
+      }
+    }
+  </style>
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li class="current"><a href="/">Home</a></li>
-									<li>
-										<a href="/cse6xsdfa23" class="icon solid fa-angle-down">Teaching</a>
-										<ul>
-											<li><a href="/cse6xsdfa23">CSE6 XSD FA23</a></li>
-										</ul>
-									</li>
-									<li>
-										<a href="/cv" class="icon solid fa-angle-down">Curriculum Vitae</a>
-										<ul>
-											<li><a href="/cv#education">Education</a></li>
-											<li><a href="/cv#work">Work</a></li>
-                                            <li>
-												<a href="/cv#projects">Projects</a>
-												<ul>
-													<li><a href="/cv#software_engineering">Software Engineering</a></li>
-													<li><a href="/cv#eduresearch">Education</a></li>
-													<li><a href="/cv#bioinformatics">Bioinformatics</a></li>
-												</ul>
-											</li>
-											<li><a href="/cv#organizations">Organizations</a></li>
-										</ul>
-									</li>
-								</ul>
-							</nav>
+<style>
+  :root {
+      --global-font-size: 15px;
+      --global-line-height: 1.4em;
+      --global-space: 10px;
+      --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+      serif;
+      --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+      serif;
+      --background-color: #FCF6E5;
+      --page-width: 60em;
+      --font-color: #697A82;
+      --invert-font-color: #FCF6E5;
+      --secondary-color: #697A82;
+      --tertiary-color: #697A82;
+      --primary-color: #4689CC;
+      --error-color: #7d7b7c;
+      --progress-bar-background: #FCF6E5;
+      --progress-bar-fill: #4689CC;
+      --code-bg-color: #FCF6E5;
+      --input-style: solid;
+      --display-h1-decoration: none;
+  }
 
-					</section>
+  h4 {
+    color: #58A39B;
+  }
 
-				<!-- Banner -->
-					<section id="banner">
-						<div class="content">
-							<header class="major special">
-								<h1>Sabeel Mansuri</h1>
-								<p>Health AI @ AWS</p>
-								<p>Education @ UC San Diego</p>
-							</header>
-						</div>
-					</section>
+  a {
+    color: #C65087;
+  }
+</style>
 
-				<!-- Section -->
-					<section class="wrapper style1" id="first">
-						<div class="inner">
-							<header class="major special">
-								<h2>Spotlight</h2>
-							</header>
-							<div class="spotlights">
-								<section>
-									<div class="image"><img src="images/Omics.png" alt="" /></div>
-									<div class="content">
-										<header class="major">
-											<h3>AWS HealthOmics</h3>
-										</header>
-										<p> I'm a founding engineer for <a target="_blank"href="https://aws.amazon.com/omics/">AWS HealthOmics</a>, a new petabyte-scale storage and analysis platform for bioinformatics researchers and clinicians. We've enjoyed (and continue to enjoy) a nearly 2-year journey to take a once-ambitious idea at the intersection bioinformatics and the cloud, and go from 0 lines of code to General Availability.</p>
-									</div>
-								</section>
-                                <section>
-									<div class="image"><img src="images/Python.png" alt="" /></div>
-									<div class="content">
-										<header class="major">
-											<h3>Introduction to Object-Oriented Programming: Python</h3>
-										</header>
-										<p>I'm the first author of an interactive, adaptive textbook for CSE 6R, a new fully-online introductory computer science course that is offered at campuses across the University of California. The text embraces an active-learning approach that challenges students to think critically and diagnose their own learning breakdowns.</p>
-									</div>
-								</section>
-								<section>
-									<div class="image"><img src="images/Scriptor.png" alt="" /></div>
-									<div class="content">
-										<header class="major">
-											<h3>Scriptor</h3>
-										</header>
-										<p>Scriptor uses speech-to-text technology to process and index the UC San Diego Podcast System, allowing students to search for keywords and instantly be presented with precise timestamps in podcasts that match the information they want. Scriptor wraps this in a personalized interface, allowing users to favorite, save history, and more.</p>
-									</div>
-								</section>
-							</div>
-						</div>
-					</section>
+    <!-- <style>
+        :root {
+            --global-font-size: 15px;
+            --global-line-height: 1.4em;
+            --global-space: 10px;
+            --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+            serif;
+            --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+            serif;
+            --background-color: #222225;
+            --page-width: 60em;
+            --font-color: #e8e9ed;
+            --invert-font-color: #222225;
+            --secondary-color: #a3abba;
+            --tertiary-color: #a3abba;
+            --primary-color: #62c4ff;
+            --error-color: #ff3c74;
+            --progress-bar-background: #3f3f44;
+            --progress-bar-fill: #62c4ff;
+            --code-bg-color: #3f3f44;
+            --input-style: solid;
+            --display-h1-decoration: none;
+        }
+    </style> -->
+</head>
+<body class="terminal">
+</div>
+    <div class="container">
+  <div class="terminal-nav">
+    <header class="terminal-logo">
+      <div class="logo terminal-prompt"><a href="/" class="no-style">Sabeel Mansuri</a></div>
+    </header>
+    <nav class="terminal-menu">
+      <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+        <li><a href="/" class="menu-item"><span>Home</span></a><meta property="position"></li>
+        <li property="itemListElement" typeof="ListItem"><a href="/cse6xsdfa23" property="item" typeof="WebPage" class="menu-item"><span property="name">Teaching</span></a><meta property="position" content="2"></li>
+        <li property="itemListElement" typeof="ListItem"><a href="/cv" property="item" typeof="WebPage" class="menu-item"><span property="name">Curriculum Vitae</span></a><meta property="position" content="3"></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="container">
+  <hr>
+  <h2 class="hljs-built_in">HI, WELCOME TO MY WEBSITE!</h2>
+  <p><b>I'm an Engineering Manager @ <a target="_blank"href="https://aws.amazon.com/omics/">AWS HealthOmics</a></b>, a cloud-native bioinformatics platform I helped found. It's been a 3-ish year journey from 0 lines of code to productionizing pharma, clinical diagnostics, & more.</p>
+  <p>When life permits, I'm also an educator. I've authored an <a target="_blank"href="https://stepik.org/course/56730/promo">Intro to Python textbook</a>, and teach both <a target="_blank"href="https://www.coursera.org/learn/covid-19-genome-assembly">Bioinformatics</a> and  <a target="_blank"href="https://online.ucsd.edu/courses/course-v1:UCSD+CSE-6-R-ON+2T2020/about">Computer Science</a> courses at UC San Diego.</p>
+  <hr>
+</div>
 
-				<!-- Section -->
-					<section class="wrapper style2 alt">
-						<div class="inner">
-							<header class="major special">
-								<h2>Interests</h2>
-							</header>
-							<div class="features">
-								<ul>
-									<li>
-										<span class="icon alt major solid fa-graduation-cap"></span>
-										<h3>Education</h3>
-										<p>Adaptive, interactive, and scalable courses, technologies, and instruction.</p>
-									</li>
-                                    <li>
-										<span class="icon alt major solid fa-microchip"></span>
-										<h3>Distributed Systems</h3>
-										<p>Hyper-scalable systems that make up the cloud.</p>
-									</li>
-									
-								</ul>
-								<span class="image"><img src="images/Sabeel.png" alt="" /></span>
-								<ul>
-									<li>
-										<span class="icon alt major solid fa-dna"></span>
-										<h3>Bioinformatics</h3>
-										<p>Workflows, workflows, and more workflows.</p>
-									</li>
-                                    <li>
-										<span class="icon alt major solid fa-chart-line"></span>
-										<h3>Data Analytics</h3>
-										<p>Efficient monitoring, aggregation, and reporting of large-scale data.</p>
-									</li>
-									
-								</ul>
-							</div>
-						</div>
-					</section>
+<div class="container">
+ <h2 class="hljs-built_in">MY PHILOSOPHY</h2>
 
-				<!-- Section -->
-					<section class="wrapper style1 svm_colorize">
-						<div class="inner">
-							<ul class="actions special">
-								<li><a href="/cv" class="button primary wide">Curriculum Vitae</a></li>
-							</ul>
-						</div>
-					</section>
+<pre>At a certain point in our lives, we lose control of what's happening to us, and our lives become controlled by fate.
+  
+That's the world's greatest lie.
+  
+<cite><a href="https://www.paulocoelho.com/">Paulo Coelho</a>, <u>The Alchemist</u></cite></pre>
 
-				<!-- Footer -->
-					<section id="footer">
-						<ul class="icons">
-                            <li><a href="https://www.facebook.com/sabeel.mansuri" class="icon alt brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/sabeelm/" class="icon alt brands fa-linkedin-in" target="_blank"><span class="label">Linkedin</span></a></li>
-							<li><a href="mailto:sabeelm@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-					</section>
+<p>I'm currently exploring the theme of "less is more." My mentors are my two nieces, who do a stellar job of reminding me of what truly matters (and, more importantly, what doesn't).</p>
 
-			</div>
+<p>Software is a unique profession that generates intangible, fleeting things that break often and evolve constantly.</p>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<p>Among the chaos, I find it incredibly valuable to take a step back and remember:</p>
 
-	</body>
-</html>
+<img src="images/Purpose.png">
+
+</footer>
+
+                <hr>
+                <section>
+    <p>Sabeel Mansuri (c) 2024</p>
+</section>
+            </main>
+        </div>
+    </div>
+    <script src="./newer_files/highlight.min.js"></script>
+<script async="" defer="" src="./newer_files/buttons.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll("pre code").forEach(block => {
+            window.hljs.highlightBlock(block);
+        });
+
+        // Get the computed style of the root element (usually :root in CSS)
+        const rootStyle = getComputedStyle(document.documentElement);
+
+        // Function to update the display element with the CSS variable value, preserving inner span
+        function updateDisplayElementPreservingSpan(cssVariable, displayElementId) {
+            const value = rootStyle.getPropertyValue(cssVariable).trim();
+            const displayElement = document.getElementById(displayElementId);
+            if (displayElement) {
+                // Preserve the inner span if it exists
+                const spanElement = displayElement.querySelector('.color-preview');
+                if (spanElement) {
+                    displayElement.innerHTML = `<span class="color-preview" style="background-color: ${value};"></span>${value}`;
+                } else {
+                    displayElement.textContent = value;
+                }
+            }
+        }
+        // Update each display element with its corresponding CSS variable value
+        updateDisplayElementPreservingSpan('--global-font-size', 'css-global-font-size');
+        updateDisplayElementPreservingSpan('--global-line-height', 'css-global-line-height');
+        updateDisplayElementPreservingSpan('--global-space', 'css-global-space');
+        updateDisplayElementPreservingSpan('--font-stack', 'css-font-stack');
+        updateDisplayElementPreservingSpan('--mono-font-stack', 'css-mono-font-stack');
+        updateDisplayElementPreservingSpan('--background-color', 'css-background-color');
+        updateDisplayElementPreservingSpan('--font-color', 'css-font-color');
+        updateDisplayElementPreservingSpan('--invert-font-color', 'css-invert-font-color');
+        updateDisplayElementPreservingSpan('--primary-color', 'css-primary-color');
+        updateDisplayElementPreservingSpan('--secondary-color', 'css-secondary-color');
+        updateDisplayElementPreservingSpan('--error-color', 'css-error-color');
+        updateDisplayElementPreservingSpan('--progress-bar-background', 'css-progress-bar-background');
+        updateDisplayElementPreservingSpan('--progress-bar-fill', 'css-progress-bar-fill');
+        updateDisplayElementPreservingSpan('--code-bg-color', 'css-code-bg-color');
+        updateDisplayElementPreservingSpan('--block-background-color', 'css-block-background-color');
+        updateDisplayElementPreservingSpan('--input-style', 'css-input-style');
+        updateDisplayElementPreservingSpan('--display-h1-decoration', 'css-display-h1-decoration');
+    });
+</script>
+<!-- Fathom - beautiful, simple website analytics -->
+<script src="./newer_files/script.js" data-site="LCUDFNYO" defer=""></script>
+<!-- / Fathom -->
+</div></html>

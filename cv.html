@@ -1,257 +1,326 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperbolic by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
--->
-<html>
-	<head>
-		<title>Sabeel Mansuri - Curriculum Vitae</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-        <link rel="icon" href="images/Sabeel.png">
-        <meta property=og:image content=https://sabeelmansuri.com/images/Sabeel.png />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<!-- saved from url=(0029)/dark/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff"> <title>Sabeel Mansuri</title>
+<meta name="description" content="">
+<meta property=og:image content=/images/Sabeel.png />
+<link rel="icon" href="images/Sabeel.png">
+<link rel="stylesheet" href="./newer_files/normalize.css">
+<link rel="stylesheet" href="./newer_files/terminal.min.css">
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<style>
+    .components-grid {
+      display: grid;
+      grid-column-gap: 1.4em;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+    }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    .image-grid {
+      display: grid;
+      grid-template-rows: auto;
+      grid-gap: 1em;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(calc(var(--page-width) / 12), 1fr)
+      );
+    }
 
-				<!-- Header -->
-					<section id="header">
+    @media only screen and (min-width: 70em) {
+      .components-grid {
+        grid-template-columns: 3fr 9fr;
+      }
 
-						<!-- Logo -->
-							<a href="/" class="logo"><strong>Sabeel</strong> Mansuri</a>
+      .components-grid aside {
+        position: sticky;
+        top: calc(var(--global-space) * 2);
+      }
+    }
+  </style>
 
-						<!-- Nav -->
-							<nav id="nav">
-								<ul>
-									<li><a href="/">Home</a></li>
-                                    <li>
-										<a href="/cse6xsdfa23" class="icon solid fa-angle-down">Teaching</a>
-										<ul>
-											<li><a href="/cse6xsdfa23">CSE6 XSD FA23</a></li>
-										</ul>
-									</li>
-									<li class="current">
-										<a href="/cv" class="icon solid fa-angle-down">Curriculum Vitae</a>
-										<ul>
-											<li><a href="/cv#education">Education</a></li>
-											<li><a href="/cv#work">Work</a></li>
-                                            <li>
-												<a href="/cv#projects">Projects</a>
-												<ul>
-													<li><a href="/cv#software_engineering">Software Engineering</a></li>
-													<li><a href="/cv#eduresearch">Education</a></li>
-													<li><a href="/cv#bioinformatics">Bioinformatics</a></li>
-												</ul>
-											</li>
-											<li><a href="/cv#organizations">Organizations</a></li>
-										</ul>
-									</li>
-								</ul>
-							</nav>
+<style>
+  :root {
+      --global-font-size: 15px;
+      --global-line-height: 1.4em;
+      --global-space: 10px;
+      --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+      serif;
+      --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+      DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+      serif;
+      --background-color: #FCF6E5;
+      --page-width: 60em;
+      --font-color: #697A82;
+      --invert-font-color: #FCF6E5;
+      --secondary-color: #697A82;
+      --tertiary-color: #697A82;
+      --primary-color: #4689CC;
+      --error-color: #7d7b7c;
+      --progress-bar-background: #FCF6E5;
+      --progress-bar-fill: #4689CC;
+      --code-bg-color: #FCF6E5;
+      --input-style: solid;
+      --display-h1-decoration: none;
+  }
 
-					</section>
+  .turq {
+    color: #58A39B;
+  }
 
-				<!-- Section -->
-					<section class="wrapper style1">
-						<div class="inner svm_cv">
-							<header class="major special">
-								<h1>Curriculum Vitae</h1>
-							</header>
-                            <h2>Sabeel Mansuri</h2>
-                            <h4 id='location'>San Francisco Bay Area</h4>
-							<hr class="" />
-                            <div id="education">
-                                <h3 style="color: #e1706e">Education</h3>
-                                <div href="#" class="button primary small cv_right_info">2020</div>
-                                <h4>University of California, San Diego</h4>
-                                <h5>B.S. in Computer Science: Bioinformatics</h5>
-                                <p><i>Summa Cum Laude</i> <br /> <i>Phi Beta Kappa</i> <br /> <i>Excellence in Teaching: Computer Science & Engineering</i></p>
-                            </div>
-                            <hr />
-                            <div id="work">
-                                <h3 style="color: #e1706e">Work</h3>
-                                <div id="work_amazon_ft2">
-                                    <div class="button primary small cv_right_info">Feb '22 - Present</div>
-                                    <h4>Founding Engineer, Health AI</h4>
-                                    <h5>Amazon Web Services</h5>
-                                    <p class="cv_desc">I'm a founding engineer for <a target="_blank"href="https://aws.amazon.com/omics/">AWS HealthOmics</a>, a new petabyte-scale storage and analysis platform for bioinformatics researchers and clinicians.</p>
-                                </div>
+  h4 {
+    color: #58A39B;
+  }
 
-                                <div id="work_instr_coursera">
-                                    <div class="button primary small cv_right_info">Apr '20 - Present </div>
-                                    <h4>Instructor (Remote)</h4>
-                                    <h5>UC San Diego</h5>
-                                    <p class="cv_desc">I'm an instructor for <a target="_blank"href="https://www.coursera.org/learn/covid-19-genome-assembly">Hacking COVID-19</a>, a health informatics series offered by the University of California, San Diego in partnership with Saint Petersburg State University.</p>
-                                </div>
+  a {
+    color: #C65087;
+  }
+</style>
 
-                                <div id="work_instr_assist">
-                                    <div class="button primary small cv_right_info">Jun '22 - Present </div>
-                                    <h4>Assistant Teacher</h4>
-                                    <h5>Computer Science & Engineering Department @ UC San Diego</h5>
-                                    <p class="cv_desc">I'm an assistant teacher for CSE6 XSD, an adaptation of my <a target="_blank"href="https://online.ucsd.edu/courses/course-v1:UCSD+CSE-6-R-ON+2T2020/about">introductory Python course</a> that is being offered by the Division of Extended Studies at UC San Diego.</p>
-                                </div>
+    <!-- <style>
+        :root {
+            --global-font-size: 15px;
+            --global-line-height: 1.4em;
+            --global-space: 10px;
+            --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+            serif;
+            --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
+            serif;
+            --background-color: #222225;
+            --page-width: 60em;
+            --font-color: #e8e9ed;
+            --invert-font-color: #222225;
+            --secondary-color: #a3abba;
+            --tertiary-color: #a3abba;
+            --primary-color: #62c4ff;
+            --error-color: #ff3c74;
+            --progress-bar-background: #3f3f44;
+            --progress-bar-fill: #62c4ff;
+            --code-bg-color: #3f3f44;
+            --input-style: solid;
+            --display-h1-decoration: none;
+        }
+    </style> -->
+</head>
+<body class="terminal">
+</div>
+    <div class="container">
+  <div class="terminal-nav">
+    <header class="terminal-logo">
+      <div class="logo terminal-prompt"><a href="/" class="no-style">Sabeel Mansuri - Curriculum Vitae</a></div>
+    </header>
+    <nav class="terminal-menu">
+      <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+        <li><a href="/" class="menu-item"><span>Home</span></a><meta property="position"></li>
+        <li property="itemListElement" typeof="ListItem"><a href="/cse6xsdfa23" property="item" typeof="WebPage" class="menu-item"><span property="name">Teaching</span></a><meta property="position" content="2"></li>
+        <li property="itemListElement" typeof="ListItem"><a href="/cv" property="item" typeof="WebPage" class="menu-item"><span property="name">Curriculum Vitae</span></a><meta property="position" content="3"></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="container">
+<hr>
+<h2 class="hljs-built_in">EDUCATION</h2>
+<span class="turq">
+<pre style="white-space:pre-line;word-break:keep-all;">
+<b><span class="hljs-built_in" style="color:#58A39B">UNIVERSITY OF CALIFORNIA, SAN DIEGO</span></b>
+<span>B.S. in Computer Science & Bioinformatics</span><span style="float:right;">2020</span><br>
+Summa Cum Laude | Phi Beta Kappa | Excellence in Teaching
+</pre>
 
-                                <div id="work_amazon_ft1">
-                                    <div class="button primary small cv_right_info">Jul '20 - Feb '22</div>
-                                    <h4>Software Engineer, EC2</h4>
-                                    <h5>Amazon Web Services</h5>
-                                    <p class="cv_desc">My inaugural position at AWS was on Hyperplane, a hyper-scalable distributed networking system that underpins the core of EC2 VPC. In addition to developing core packet processing logic, I specialized in monitoring and data analysis.</p>
-                                </div>
-                                
+<hr>
+<h2 class="hljs-built_in">WORK</h2>
+<pre style="white-space:pre-line;word-break:keep-all;">
+<b><span class="hljs-built_in" style="color:#58A39B">ENGINEERING MANAGER, HEALTH AI</span></b>
+<span>Amazon Web Services</span><span style="float:right;">Jan '24 - Present</span><br>
+I manage a two-pizza team of talented full-stack engineers @ <a target="_blank"href="https://aws.amazon.com/omics/">AWS HealthOmics</a>, a cloud-native bioinformatics platform I helped found. Reach out if you want to join us!
 
-                                <div id="work_cse_tutor">
-                                    <div class="button primary small cv_right_info">Apr '20 - Jun '20</div>
-                                    <h4>Remote Instruction Advisor & Head Tutor</h4>
-                                    <h5>Computer Science & Engineering Department @ UC San Diego</h5>
-                                    <p class="cv_desc">Due to the COVID-19 pandemic, I was hired to drive ed-tech automation projects to implement remote instruction. Our team created bespoke (no/low-code) grading pipelines spanning across educational platforms and academic integrity software. I also served as the head tutor for the first remote offering of <a target="_blank"href="https://cseweb.ucsd.edu/classes/sp20/cse100-c/">CSE 100 - Advanced Data Structures</a>, designing all quiz, midterm, and final exam material which continues to be used in current course offerings.</p>
-                                </div>
-                                
-                                <div id="work_amazon_intern">
-                                    <div class="button primary small cv_right_info">Jun '19 - Sep '19</div>
-                                    <h4>Software Engineer Intern</h4>
-                                    <h5>Amazon.com</h5>
-                                    <p class="cv_desc">I worked on the Amazon Family team to refactor an internal ML product recommendation tool. My project was a full-stack redesign that opened the software to all teams across Amazon, abstracting customer behavior to determine team-specific product rankings.</p>
-                                </div>
-                                
-                                <div id="work_research_assistant">
-                                    <div class="button primary small cv_right_info">Jan '18 - Jun '19</div>
-                                    <h4>Computational Research Assistant</h4>
-                                    <h5>Scripps Institute of Oceanography</h5>
-                                    <p class="cv_desc">I analyzed genetic data with an emphasis on <i>de novo</i> assembly. I optimized pipelines for processing genomic datasets, designed shell scripts for optimizing workflows, and assembled Antarctic DNA using state-of-the-art bioinformatics techniques.</p>
-                                </div>
-                                
-                                <div id="work_bravado">
-                                    <div class="button primary small cv_right_info">Jul '18 - Mar '19</div>
-                                    <h4>Product Management Intern</h4>
-                                    <h5>Bravado</h5>
-                                    <p class="cv_desc">I served a swiss-army-knife role at Bravado, performing ideation & design sandboxing for major product releases, full-stack development, and quality assurance. I led a data-driven UX overhaul for new user onboarding and a search optimization yielding 90% latency reduction.</p>
-                                </div>  
-                            </div>
-                            <hr />
-                            <div id="projects">
-                                <h3 style="color: #e1706e">Projects</h3>
-                                <div id="eduresearch">
-                                    <h3 style="margin-top:2rem !important;">Education</h3>
-                                    <div id="cse_6" style="margin-left:1em">
-                                        <div class="button primary small cv_right_info">Feb '20 - Present</div>
-                                        <h4 class="cv_first" style="margin-top: 0.5rem !important">CSE 6: Intro. to Comp. Sci. & OOP: Python</h4>
-                                        <p class="cv_desc">I'm the first author of an interactive, adaptive textbook for CSE 6R, a new fully-online introductory computer science course that is offered at campuses across the University of California. It embraces an active-learning approach that challenges students to think critically and diagnose their own learning breakdowns.</p>
-                                        
-                                        <p style="color:#ef8376; font-weight: 400; margin-top: -0.75em"><a target="_blank" href="https://stepik.org/course/56730/">View the interactive textbook here.</a></p>
-                                    </div>
-                                    
-                                    <div id="cse_199" style="margin-left:1em">
-                                        <div class="button primary small cv_right_info">Jan '20 - Jun '20</div>
-                                        <h4>CSE 199: Development of Novel Educational Techniques</h4>
-                                        <p class="cv_desc">In partnership with <a target="_blank"href="https://hkn.ucsd.edu/">IEEE - Eta Kappa Nu</a>, I founded and led an accredited, four-unit course at UC San Diego for conducting education research. The poster we presented on our initiative at the <a target="_blank" href="http://www.ccsc.org/southwestern/index.php">13th Consortium for Computing Sciences in Colleges Southwest Region Conference</a> is linked below.</p>
-                                        
-                                        <p style="color:#ef8376; font-weight: 400; margin-top: -0.75em"><a target="_blank" href="199_poster.pdf">What to do after AP CS? A case study on short technical modules for post-AP-exam high school students<br >Sabeel Mansuri, Hannah Zhou, Hemanth Battu, Alex Fong, Tiffany Ho, Eric Xiao, Niema Moshiri</a></p>
-                                    </div>
-                                    
-                                    <div id="tic_tac_toe" style="margin-left:1em">
-                                        <div class="button primary small cv_right_info">May '19 - Mar '20</div>
-                                        <h4>Introduction to Adversarial Search</h4>
-                                        <p class="cv_desc">I was the lead author of a mini-course for AP Computer Science students that used an active-learning approach to teaching artificial intelligence. Students learn object-oriented programming principles, Minimax, and complete the course by building their own rational Tic-Tac-Toe bot.</p>
-                                        
-                                        <p style="color:#ef8376; font-weight: 400; margin-top: -0.75em"><a target="_blank" href="https://stepik.org/63429">Take my course (for free!).</a></p>
-                                    </div> 
-                                </div>
 
-                                <div id="software_engineering">
-                                    <h3 style="margin-top:1.5rem !important;">Software Engineering</h3>
-                                    <div id="scriptor" style="margin-left:1em">
-                                        <div class="button primary small cv_right_info">React + Python</div>
-                                        <h4 class="cv_first" style="margin-top: 0.5rem !important">Scriptor</h4>
-                                        <h5 class="timestamp award" style="text-align: left"><img src="images/Award.png" style="vertical-align: sub; margin-bottom: 0px" height="20em"> Best Software Engineering Project, Spring 2019</h5>
-                                        <p class="cv_desc">Scriptor is a solution for streamlining studying at the University of California, San Diego. 
+<b><span class="hljs-built_in" style="color:#58A39B">LECTURER</span></b>
+<span>UC San Diego</span><span style="float:right;">Jun '20 - Present</span><br>
+I'm intermittently an instructor for 2 courses I developed for UC San Diego. The first is <a target="_blank"href="https://www.coursera.org/learn/covid-19-genome-assembly">Hacking COVID-19</a>, a health informatics series offered in partnership with Saint Petersburg State University. The second is CSE6 XSD (aka CSE 6R), an adaptation of my <a target="_blank"href="https://online.ucsd.edu/courses/course-v1:UCSD+CSE-6-R-ON+2T2020/about">introductory Python course</a>.
 
-                                            Scriptor uses speech-to-text technology to process and index the UC San Diego Podcast System. This allows students to search for keywords and instantly be presented with precise timestamps in podcasts that match the information they want, efficiently parsing through a vast database so students don't have to. Scriptor wraps this functionality with a personalized interface, allowing users to favorite, save their history, and more.</p>
-                                        <p style="color:#ef8376; font-weight: 400; margin-top: -0.75em"><a target="_blank" href="https://github.com/sabeelmansuri/Scriptor">View the Scriptor codebase</a>.</p>
-                                    </div>
-                                    
-                                    
-                                    <div id="virtus" style="margin-left:1em">
-                                        <div class="button primary small cv_right_info">React + Firebase</div>
-                                        <h4>Virtus</h4>
-                                        <h5 class="timestamp award" style="text-align: left"><img src="images/Award.png" style="vertical-align: sub; margin-bottom: 0px" height="20em"> Winner - SD Hacks 2019</h5>
-                                        <p class="cv_desc">Virtus is a scalable solution for personalized education that makes virtual office hours more productive and efficient for students and instructors. Instructors can register their class, set up a broadcast, and host office hours remotely. Students can then join the stream, submit questions to the instructor, and collaborate with other students in a chatroom, gaining a personalized education without the limitations of a physical room.</p>
-                                        <p style="color:#ef8376; font-weight: 400; margin-top: -0.75em"><a target="_blank" href="https://devpost.com/software/virtus-a14wpr">Learn more about Virtus</a>.</p>
-                                    </div>
-                                </div>
-                                
-                                <div id="bioinformatics">
-                                    <h3 style="margin-top:2rem !important;">Bioinformatics</h3>
-                                    <div id="crash_course" style="margin-left:1em">
-                                        <div class="button primary small cv_right_info">AWS</div>
-                                        <h4 class="cv_first" style="margin-top: 0.5rem !important">Bioinformatics Crash Course</h4>
-                                        <p class="cv_desc">The Bioinformatics Crash Course is a year-long introductory sequence of lessons intended to introduce aspiring bioinformaticians to practical, lab-applicable skills. For years, it has served as students' first exposure to bioinformatics due to the current lack of an introductory bioinformatics series at UC San Diego.</p>
-                                        
-                                        <p style="color:#ef8376; font-weight: 400; margin-top: -0.75em"><a target="_blank" href="https://www.bioinformaticscrashcourse.com/">The Crash Course is fully open-source and available online.</a></p>
-                                    </div>
-                                    
-                                    <div id="genome_assembly" style="margin-left:1em">
-                                        <div class="button primary small cv_right_info">Bash + Python</div>
-                                        <h4>Oxford-Nanopore Genome Assembly</h4>
-                                        <p class="cv_desc">Oxford-Nanopore sequencing, which is slowly moving towards becoming the new standard for genome sequencing, was in its infancy when I was given an opportunity to perform a <i>de novo</i> assembly. After successfully assembling the genome of a local swamp bacteria, I published a tutorial on how to process, assemble, and annotate Oxford-Nanopore data.</p>
-                                        
-                                        <p style="color:#ef8376; font-weight: 400; margin-top: -0.75em"><a target="_blank" href="https://www.polarmicrobes.org/tutorial-nanopore-analysis-pipeline/">A step-by-step assembly is published here.</a></p>
-                                    </div>
-                                    
-                                    <div id="epigenomics" style="margin-left:1em">
-                                        <div class="button primary small cv_right_info">Genomics</div>
-                                        <h4>Introduction to Epigenomics</h4>
-                                        <p class="cv_desc">I co-authored an introductory bioinformatics-driven lesson on epigenomics, which is the analysis of gene expression that is not attributable to the DNA sequence of a genome. It covers core epigenomic modifications and analysis techniques. It is intentionally written to accessible to novice learners with little prior knowledge and, like the <a href="#crash_course">Bioinformatics Crash Course</a> above, introduce students to the field. </p>
-                                        
-                                        
-                                        <p style="color:#ef8376; font-weight: 400; margin-top: -0.75em; margin-top: -0.75em"><a target="_blank" href="https://github.com/sabeelmansuri/Epigenomics/">The lesson is available here.</a></p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <hr>
-                            <div id="organizations">
-                                <h3 style="color: #e1706e">Organizations</h3>
-                                <div id="hkn">
-                                    <h4>IEEE - Eta Kappa Nu (HKN)</h4>
-                                    <h5 class="cv_subtitle">Officer</h5>
-                                    <p class="cv_desc">HKN is the official honors society of the Jacobs School of Engineering at UC San Diego. I served as an officer from 2019-2020, founding HKN's Computer Science Outreach division. We connected local high schools with the resources and opportunities offered at UC San Diego. We also facilitated remote instruction during the COVID-19 pandemic.</p>
-                                </div>
-                                
-                                <div id="ubic">
-                                    <h4>Undergraduate Bioinformatics Club (UBIC)</h4>
-                                    <h5 class="cv_subtitle">Ambassador and Crash Course Developer</h5>
-                                    <p class="cv_desc">UBIC is a not-for-profit organization dedicated to furthering bioinformatics initiatives at UC San Diego. From 2017-2018, I was the main contact point for recruiting industry and academia representatives. From 2018-2020, I developed and offered the <a target="_blank" href="https://github.com/sabeelmansuri/Bioinformatics-Crash-Course">Bioinformatics Crash Course</a> to hundreds of undergraduate and graduate students.</p>
-                                </div>
-                            </div>
-						</div>
-					</section>
 
-				<!-- Footer -->
-					<section id="footer">
-						<ul class="icons">
-                            <li><a href="https://www.facebook.com/sabeel.mansuri" class="icon alt brands fa-facebook-f" target="_blank"><span class="label">Facebook</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/sabeelm/" class="icon alt brands fa-linkedin-in" target="_blank"><span class="label">Linkedin</span></a></li>
-							<li><a href="mailto:sabeelm@gmail.com" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
-						</ul>
-					</section>
+<b><span class="hljs-built_in" style="color:#58A39B">FOUNDING ENGINEER (SR. SDE), HEALTH AI</span></b>
+<span>Amazon Web Services</span><span style="float:right;">Feb '22 - Jan '24</span><br>
+Before transitioning to management, I was a founding engineer for <a target="_blank"href="https://aws.amazon.com/omics/">AWS HealthOmics</a>, where I designed, built, and scaled the service's distributed compute platform.
 
-			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<b><span class="hljs-built_in" style="color:#58A39B">SOFTWARE ENGINEER, EC2</span></b>
+<span>Amazon Web Services</span><span style="float:right;">Jul '20 - Feb '22</span><br>
+My inaugural post at AWS was on EC2 Hyperplane, a distributed networking system that underpins the core of EC2 VPC. In addition to core network interfaces, I specialized in metrics and data analysis.
 
-	</body>
-</html>
+
+<b><span class="hljs-built_in" style="color:#58A39B">REMOTE INSTRUCTION ADVISOR</span></b>
+<span>UC San Diego</span><span style="float:right;">Apr '20 - Jun '20</span><br>
+I was hired to lead ed-tech automation projects to implement remote instruction in light of the COVID-19 pandemic. My team created bespoke (no/low-code) pipelines spanning educational platforms and academic integrity software, which we integrated across the university.
+
+
+<b><span class="hljs-built_in" style="color:#58A39B">SOFTWARE ENGINEER INTERN</span></b>
+<span>Amazon.com</span><span style="float:right;">Jun '19 - Sep '19</span><br>
+I worked on the Amazon Family team to redesign a full-stack product recommendation tool to expand software usability to all teams across Amazon.
+
+
+<b><span class="hljs-built_in" style="color:#58A39B">COMPUTATIONAL RESEARCH ASSISTANT</span></b>
+<span>Scripps Institute of Oceanography</span><span style="float:right;">Jan '18 - Jun '19</span><br>
+I analyzed genetic data, with an emphasis on de novo assembly. I developed Python pipelines for processing datasets, optimized bioinformatics workflows, and assembled Antarctic DNA.
+
+
+<b><span class="hljs-built_in" style="color:#58A39B">PRODUCT MANAGER INTERN</span></b>
+<span>Bravado</span><span style="float:right;">Jul '18 - Mar '19</span><br>
+I served a swiss-army-knife role at Bravado, spanning ideation & design sandboxing for major product releases, full-stack web development, and cross-platform quality assurance. I led a data-driven UX overhaul for new user onboarding and a search optimization yielding 90% latency reduction.
+</pre>
+
+<hr>
+<h2 class="hljs-built_in">PROJECTS: EDUCATION</h2>
+<pre style="white-space:pre-line;word-break:keep-all;">
+<b><span class="hljs-built_in" style="color:#58A39B">CSE 6: INTRO TO COMP. SCI. & OOP: PYTHON</span></b><span style="float:right;">Feb '20 - Present</span><br>
+I'm the first author of an interactive, adaptive textbook for CSE 6R, a new fully-online introductory computer science course offered across campuses at the University of California. It embraces an active-learning approach to challenge students to critically diagnose their own learning breakdowns.<br>
+<a target="_blank" href="https://stepik.org/course/56730/">View the interactive textbook here</a>
+
+
+<b><span class="hljs-built_in" style="color:#58A39B">CSE 199: DEVELOPMENT OF NOVEL EDUCATIONAL TECHNIQUES</span></b><span style="float:right;">Jan '20 - Jun '20</span><br>
+In partnership with <a target="_blank"href="https://hkn.ucsd.edu/">IEEE - Eta Kappa Nu</a>, I led an accredited, four-unit course at UC San Diego for conducting education research. My team was invited to present our initiative at the <a target="_blank" href="http://www.ccsc.org/southwestern/index.php">13th Consortium for Computing Sciences in Colleges Southwest Region Conference</a>.<br>
+<a target="_blank" href="199_poster.pdf">View our poster presentation here (Mansuri et al.)</a>
+
+
+<b><span class="hljs-built_in" style="color:#58A39B">Introduction to Adversarial Search</span></b><span style="float:right;">May '19 - Mar '20</span><br>
+I'm the lead author for an introductory artifical intelligence mini-course for AP Computer Science students. Learners discover object-oriented programming principles, Minimax, and complete the course by building a Tic-Tac-Toe bot.<br>
+<a target="_blank" href="https://stepik.org/63429">Take the course (for free!)</a>
+</pre>
+
+<br>
+<h2 class="hljs-built_in">PROJECTS: SOFTWARE</h2>
+<pre style="white-space:pre-line;word-break:keep-all;">
+<b><span class="hljs-built_in" style="color:#58A39B">SCRIPTOR</span></b>
+<img src="images/Award.png" style="vertical-align: sub; margin-bottom: 0px;" height="20em"> Best Software Engineering Project, Spring 2019<span style="float:right;">React + GCP</span><br>
+Scriptor uses speech-to-text technology to index the UC San Diego Podcast System, allowing students to search for keywords and get precise timestamps with matching information in recorded lectures.
+
+Ahead of its time (and the COVID-19 pandemic), Scriptor was awarded Best Software Engineering Project at UC San Diego in 2019. 
+
+<a target="_blank" href="https://github.com/sabeelmansuri/Scriptor">View the Scriptor codebase</a>
+
+
+<b><span class="hljs-built_in" style="color:#58A39B">VIRTUS</span></b>
+<img src="images/Award.png" style="vertical-align: sub; margin-bottom: 0px" height="20em"> Winner - SD Hacks 2019<span style="float:right;">React + Python</span><br>
+Virtus is a scalable solution for personalized education that enables productive and efficient virtual office hours. Instructors register their class and stream office hours remotely, and students use platform integrations to submit questions and collaborate with peers.
+
+<a target="_blank" href="https://devpost.com/software/virtus-a14wpr">Learn more about Virtus</a>
+</pre>
+
+<br>
+<h2 class="hljs-built_in">PROJECTS: BIOINFORMATICS</h2>
+<pre style="white-space:pre-line;word-break:keep-all;">
+<b><span class="hljs-built_in" style="color:#58A39B">BIOINFORMATICS CRASH COURSE</span></b><span style="float:right;">AWS</span><br>
+The Bioinformatics Crash Course is a year-long introductory sequence of lessons that introduces aspiring bioinformaticians to practical, lab-applicable skills. For years, it's served as students' first exposure to bioinformatics due to the current lack of an introductory series.
+
+<a target="_blank" href="https://www.bioinformaticscrashcourse.com/">The Crash Course is open-source and available online</a>
+
+
+<b><span class="hljs-built_in" style="color:#58A39B">OXFORD-NANOPORE GENOME ASSEMBLY</span></b><span style="float:right;">Bash + Python</span><br>
+Oxford-Nanopore sequencing, which is moving toward becoming the new genome sequencing standard, was in its infancy when I assembled the genome of a local swamp bacteria. I published a tutorial on how to process, assemble, and annotate Oxford-Nanopore data.
+
+<a target="_blank" href="https://www.polarmicrobes.org/tutorial-nanopore-analysis-pipeline/">A step-by-step assembly is published here</a>
+
+
+<b><span class="hljs-built_in" style="color:#58A39B">INTRODUCTION TO EPIGENOMICS</span></b><span style="float:right;">Genomics</span><br>
+I co-authored a lesson on epigenomics, written to be accessible to novice learners and introduce students to the field.
+
+<a target="_blank" href="https://github.com/sabeelmansuri/Epigenomics/">The lesson is available here</a>
+</pre>
+
+<hr>
+<h2 class="hljs-built_in">ORGANIZATIONS</h2>
+<pre style="white-space:pre-line;word-break:keep-all;">
+<b><span class="hljs-built_in" style="color:#58A39B">IEEE - ETA KAPPA NU (HKN)</span></b>
+Founder, Computer Science Outreach<br>
+HKN is the official honors society of the Jacobs School of Engineering at UC San Diego. I served as an officer from 2019-2020, founding HKN's Computer Science Outreach division. We connected local high schools with the resources and opportunities offered at UC San Diego.
+
+
+<b><span class="hljs-built_in" style="color:#58A39B">UNDERGRADUATE BIOINFORMATICS CLUB (UBIC)</span></b>
+Ambassador & Course Developer<br>
+UBIC is a not-for-profit organization dedicated to furthering bioinformatics initiatives at UC San Diego. From 2017-2018, I was the main contact point for recruiting industry and academia representatives. Since 2018, I've developed and offered the <a target="_blank" href="https://www.bioinformaticscrashcourse.com/">Bioinformatics Crash Course</a> to hundreds of undergraduate and graduate students.
+</pre>
+</div>
+
+<div class="container">
+ 
+
+</footer>
+
+                <hr>
+                <section>
+    <p>Sabeel Mansuri (c) 2024</p>
+</section>
+            </main>
+        </div>
+    </div>
+    <script src="./newer_files/highlight.min.js"></script>
+<script async="" defer="" src="./newer_files/buttons.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll("pre code").forEach(block => {
+            window.hljs.highlightBlock(block);
+        });
+
+        // Get the computed style of the root element (usually :root in CSS)
+        const rootStyle = getComputedStyle(document.documentElement);
+
+        // Function to update the display element with the CSS variable value, preserving inner span
+        function updateDisplayElementPreservingSpan(cssVariable, displayElementId) {
+            const value = rootStyle.getPropertyValue(cssVariable).trim();
+            const displayElement = document.getElementById(displayElementId);
+            if (displayElement) {
+                // Preserve the inner span if it exists
+                const spanElement = displayElement.querySelector('.color-preview');
+                if (spanElement) {
+                    displayElement.innerHTML = `<span class="color-preview" style="background-color: ${value};"></span>${value}`;
+                } else {
+                    displayElement.textContent = value;
+                }
+            }
+        }
+        // Update each display element with its corresponding CSS variable value
+        updateDisplayElementPreservingSpan('--global-font-size', 'css-global-font-size');
+        updateDisplayElementPreservingSpan('--global-line-height', 'css-global-line-height');
+        updateDisplayElementPreservingSpan('--global-space', 'css-global-space');
+        updateDisplayElementPreservingSpan('--font-stack', 'css-font-stack');
+        updateDisplayElementPreservingSpan('--mono-font-stack', 'css-mono-font-stack');
+        updateDisplayElementPreservingSpan('--background-color', 'css-background-color');
+        updateDisplayElementPreservingSpan('--font-color', 'css-font-color');
+        updateDisplayElementPreservingSpan('--invert-font-color', 'css-invert-font-color');
+        updateDisplayElementPreservingSpan('--primary-color', 'css-primary-color');
+        updateDisplayElementPreservingSpan('--secondary-color', 'css-secondary-color');
+        updateDisplayElementPreservingSpan('--error-color', 'css-error-color');
+        updateDisplayElementPreservingSpan('--progress-bar-background', 'css-progress-bar-background');
+        updateDisplayElementPreservingSpan('--progress-bar-fill', 'css-progress-bar-fill');
+        updateDisplayElementPreservingSpan('--code-bg-color', 'css-code-bg-color');
+        updateDisplayElementPreservingSpan('--block-background-color', 'css-block-background-color');
+        updateDisplayElementPreservingSpan('--input-style', 'css-input-style');
+        updateDisplayElementPreservingSpan('--display-h1-decoration', 'css-display-h1-decoration');
+    });
+</script>
+<!-- Fathom - beautiful, simple website analytics -->
+<script src="./newer_files/script.js" data-site="LCUDFNYO" defer=""></script>
+<!-- / Fathom -->
+</div></html>
