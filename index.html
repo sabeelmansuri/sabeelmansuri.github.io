@@ -27,36 +27,6 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <style>
-    .components-grid {
-      display: grid;
-      grid-column-gap: 1.4em;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-    }
-
-    .image-grid {
-      display: grid;
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(calc(var(--page-width) / 12), 1fr)
-      );
-    }
-
-    @media only screen and (min-width: 70em) {
-      .components-grid {
-        grid-template-columns: 3fr 9fr;
-      }
-
-      .components-grid aside {
-        position: sticky;
-        top: calc(var(--global-space) * 2);
-      }
-    }
-  </style>
-
-<style>
   :root {
       --global-font-size: 15px;
       --global-line-height: 1.4em;
@@ -86,6 +56,10 @@
     color: #58A39B;
   }
 
+  h2 {
+    color: var(--primary-color);
+  }
+
   a {
     color: #C65087;
   }
@@ -96,36 +70,8 @@
     overflow-wrap: break-word; /* Fallback: allow break only if word is too long for its own line */
   }
 </style>
-
-    <!-- <style>
-        :root {
-            --global-font-size: 15px;
-            --global-line-height: 1.4em;
-            --global-space: 10px;
-            --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-            serif;
-            --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-            serif;
-            --background-color: #222225;
-            --page-width: 60em;
-            --font-color: #e8e9ed;
-            --invert-font-color: #222225;
-            --secondary-color: #a3abba;
-            --tertiary-color: #a3abba;
-            --primary-color: #62c4ff;
-            --error-color: #ff3c74;
-            --progress-bar-background: #3f3f44;
-            --progress-bar-fill: #62c4ff;
-            --code-bg-color: #3f3f44;
-            --input-style: solid;
-            --display-h1-decoration: none;
-        }
-    </style> -->
 </head>
 <body class="terminal">
-</div>
     <div class="container">
   <div class="terminal-nav">
     <header class="terminal-logo">
@@ -133,7 +79,7 @@
     </header>
     <nav class="terminal-menu">
       <ul vocab="https://schema.org/" typeof="BreadcrumbList">
-        <li><a href="/" class="menu-item"><span>Home</span></a><meta property="position"></li>
+        <li><a href="/" class="menu-item"><span>Home</span></a><meta property="position" content="1"></li>
         <li property="itemListElement" typeof="ListItem"><a href="/cse6xsdfa23" property="item" typeof="WebPage" class="menu-item"><span property="name">Teaching</span></a><meta property="position" content="2"></li>
         <li property="itemListElement" typeof="ListItem"><a href="/cv" property="item" typeof="WebPage" class="menu-item"><span property="name">Curriculum Vitae</span></a><meta property="position" content="3"></li>
       </ul>
@@ -142,14 +88,14 @@
 </div>
 <div class="container">
   <hr>
-  <h2 class="hljs-built_in">HI, WELCOME TO MY WEBSITE!</h2>
+  <h2>HI, WELCOME TO MY WEBSITE!</h2>
   <p><b>I'm a Senior Software Engineer @ <a target="_blank"href="https://aws.amazon.com/health/">AWS Life Sciences AI</a></b>, shaping architecture and execution across 2 AWS services in a 5-team, 60-engineer organization. Over the past 4 years, I helped build <a target="_blank"href="https://aws.amazon.com/healthomics/">AWS HealthOmics</a> from scratch and spent 2 years leading teams as an Engineering Manager.</p>
   <p>When life permits, I'm also an educator. I authored an <a target="_blank"href="https://stepik.org/course/56730/promo">Intro to Python textbook</a> and teach both <a target="_blank"href="https://www.coursera.org/learn/covid-19-genome-assembly">Bioinformatics</a> and  <a target="_blank" href="https://discover.ucsd.edu/courses/cse-6.html">Computer Science</a> courses at UC San Diego.</p>
   <hr>
 </div>
 
 <div class="container">
- <h2 class="hljs-built_in">MY PHILOSOPHY</h2>
+ <h2>MY PHILOSOPHY</h2>
 
 <pre>At a certain point in our lives, we lose control of what's happening to us, and our lives become controlled by fate.
   
@@ -165,61 +111,12 @@ That's the world's greatest lie.
 
 <img src="images/Purpose.png">
 
-</footer>
-
                 <hr>
                 <section>
     <p>Sabeel Mansuri (c) 2026</p>
 </section>
-            </main>
         </div>
-    </div>
-    <script src="./newer_files/highlight.min.js"></script>
-<script async="" defer="" src="./newer_files/buttons.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.querySelectorAll("pre code").forEach(block => {
-            window.hljs.highlightBlock(block);
-        });
-
-        // Get the computed style of the root element (usually :root in CSS)
-        const rootStyle = getComputedStyle(document.documentElement);
-
-        // Function to update the display element with the CSS variable value, preserving inner span
-        function updateDisplayElementPreservingSpan(cssVariable, displayElementId) {
-            const value = rootStyle.getPropertyValue(cssVariable).trim();
-            const displayElement = document.getElementById(displayElementId);
-            if (displayElement) {
-                // Preserve the inner span if it exists
-                const spanElement = displayElement.querySelector('.color-preview');
-                if (spanElement) {
-                    displayElement.innerHTML = `<span class="color-preview" style="background-color: ${value};"></span>${value}`;
-                } else {
-                    displayElement.textContent = value;
-                }
-            }
-        }
-        // Update each display element with its corresponding CSS variable value
-        updateDisplayElementPreservingSpan('--global-font-size', 'css-global-font-size');
-        updateDisplayElementPreservingSpan('--global-line-height', 'css-global-line-height');
-        updateDisplayElementPreservingSpan('--global-space', 'css-global-space');
-        updateDisplayElementPreservingSpan('--font-stack', 'css-font-stack');
-        updateDisplayElementPreservingSpan('--mono-font-stack', 'css-mono-font-stack');
-        updateDisplayElementPreservingSpan('--background-color', 'css-background-color');
-        updateDisplayElementPreservingSpan('--font-color', 'css-font-color');
-        updateDisplayElementPreservingSpan('--invert-font-color', 'css-invert-font-color');
-        updateDisplayElementPreservingSpan('--primary-color', 'css-primary-color');
-        updateDisplayElementPreservingSpan('--secondary-color', 'css-secondary-color');
-        updateDisplayElementPreservingSpan('--error-color', 'css-error-color');
-        updateDisplayElementPreservingSpan('--progress-bar-background', 'css-progress-bar-background');
-        updateDisplayElementPreservingSpan('--progress-bar-fill', 'css-progress-bar-fill');
-        updateDisplayElementPreservingSpan('--code-bg-color', 'css-code-bg-color');
-        updateDisplayElementPreservingSpan('--block-background-color', 'css-block-background-color');
-        updateDisplayElementPreservingSpan('--input-style', 'css-input-style');
-        updateDisplayElementPreservingSpan('--display-h1-decoration', 'css-display-h1-decoration');
-    });
-</script>
 <!-- Fathom - beautiful, simple website analytics -->
 <script src="./newer_files/script.js" data-site="LCUDFNYO" defer=""></script>
 <!-- / Fathom -->
-</div></html>
+</body></html>

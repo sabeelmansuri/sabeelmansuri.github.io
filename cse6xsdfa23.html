@@ -27,36 +27,6 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <style>
-    .components-grid {
-      display: grid;
-      grid-column-gap: 1.4em;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-    }
-
-    .image-grid {
-      display: grid;
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(calc(var(--page-width) / 12), 1fr)
-      );
-    }
-
-    @media only screen and (min-width: 70em) {
-      .components-grid {
-        grid-template-columns: 3fr 9fr;
-      }
-
-      .components-grid aside {
-        position: sticky;
-        top: calc(var(--global-space) * 2);
-      }
-    }
-  </style>
-
-<style>
   :root {
       --global-font-size: 15px;
       --global-line-height: 1.4em;
@@ -86,40 +56,16 @@
     color: #58A39B;
   }
 
+  h2 {
+    color: var(--primary-color);
+  }
+
   a {
     color: #C65087;
   }
 </style>
-
-    <!-- <style>
-        :root {
-            --global-font-size: 15px;
-            --global-line-height: 1.4em;
-            --global-space: 10px;
-            --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-            serif;
-            --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-            serif;
-            --background-color: #222225;
-            --page-width: 60em;
-            --font-color: #e8e9ed;
-            --invert-font-color: #222225;
-            --secondary-color: #a3abba;
-            --tertiary-color: #a3abba;
-            --primary-color: #62c4ff;
-            --error-color: #ff3c74;
-            --progress-bar-background: #3f3f44;
-            --progress-bar-fill: #62c4ff;
-            --code-bg-color: #3f3f44;
-            --input-style: solid;
-            --display-h1-decoration: none;
-        }
-    </style> -->
 </head>
 <body class="terminal">
-</div>
     <div class="container">
   <div class="terminal-nav">
     <header class="terminal-logo">
@@ -127,7 +73,7 @@
     </header>
     <nav class="terminal-menu">
       <ul vocab="https://schema.org/" typeof="BreadcrumbList">
-        <li><a href="/" class="menu-item"><span>Home</span></a><meta property="position"></li>
+        <li><a href="/" class="menu-item"><span>Home</span></a><meta property="position" content="1"></li>
         <li property="itemListElement" typeof="ListItem"><a href="/cse6xsdfa23" property="item" typeof="WebPage" class="menu-item"><span property="name">Teaching</span></a><meta property="position" content="2"></li>
         <li property="itemListElement" typeof="ListItem"><a href="/cv" property="item" typeof="WebPage" class="menu-item"><span property="name">Curriculum Vitae</span></a><meta property="position" content="3"></li>
       </ul>
@@ -136,10 +82,10 @@
 </div>
 <div class="container">
   <hr>
-  <h2><span class="hljs-built_in">INTRO TO COMP. SCI. & OOP: PYTHON</span></h2>
+  <h2>INTRO TO COMP. SCI. & OOP: PYTHON</h2>
   <p>Welcome to CSE6 XSD, an introductory computer science course offered by the Department of Extended Studies at UC San Diego. The course will cover a range of programming topics, including basic data types, loops and iteration, basic data structures, memory models, conditional statements, recursion, algorithm time complexity, analysis, class design, inheritance, and more.</p>
   <hr>
-  <h2><span class="hljs-built_in">BASICS</span></h2>
+  <h2>BASICS</h2>
   <h4><span>COURSE STAFF</span></h4>
   <ul>
     <li>Sabeel Mansuri (Instructor)</li>
@@ -160,7 +106,7 @@
   </ul>
 
   <hr>
-  <h2><span class="hljs-built_in">SCHEDULE</span></h2>
+  <h2>SCHEDULE</h2>
   <table class="alt">
     <thead>
         <tr>
@@ -224,13 +170,13 @@
 </table>
 
 <hr>
-<h2><span class="hljs-built_in">POLICIES</span></h2>
+<h2>POLICIES</h2>
 <h4>GRADING</h4>
 <ul>
     <li><b>Code Challenges:</b> 50%</li>
     <li><b>Exercise Breaks:</b> 20%</li>
     <li><b>Quizzes:</b> 10%</li>
-    <li><b>Final Exam:</b> 20%</li>
+    <li><b>Final Exam:</b> 20%
         <ul>
             <li><b><u>You must pass the Final Exam to pass the course</u></b></li>
         </ul>
@@ -265,61 +211,12 @@
 <p>In accordance with Section 504 of the Rehabilitation Act of 1973 and Americans with Disabilities Act of 1990, UC San Diego Extended Studies strives to provide equal access and an exceptional learning environment for all students.</p>
 <p>To complete the accommodation request form and set up a meeting to meet with our disability coordinator please click <a href="https://powerforms.docusign.net/6d1e803b-205a-4e8e-aa7f-55355feda818?env=na1&amp;acct=6371e373-11ff-4359-aa24-bf2ccbddc944&amp;accountId=6371e373-11ff-4359-aa24-bf2ccbddc944">here</a>.</p>
 
-</footer>
-
                 <hr>
                 <section>
     <p>Sabeel Mansuri (c) 2026</p>
 </section>
-            </main>
         </div>
-    </div>
-    <script src="./newer_files/highlight.min.js"></script>
-<script async="" defer="" src="./newer_files/buttons.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.querySelectorAll("pre code").forEach(block => {
-            window.hljs.highlightBlock(block);
-        });
-
-        // Get the computed style of the root element (usually :root in CSS)
-        const rootStyle = getComputedStyle(document.documentElement);
-
-        // Function to update the display element with the CSS variable value, preserving inner span
-        function updateDisplayElementPreservingSpan(cssVariable, displayElementId) {
-            const value = rootStyle.getPropertyValue(cssVariable).trim();
-            const displayElement = document.getElementById(displayElementId);
-            if (displayElement) {
-                // Preserve the inner span if it exists
-                const spanElement = displayElement.querySelector('.color-preview');
-                if (spanElement) {
-                    displayElement.innerHTML = `<span class="color-preview" style="background-color: ${value};"></span>${value}`;
-                } else {
-                    displayElement.textContent = value;
-                }
-            }
-        }
-        // Update each display element with its corresponding CSS variable value
-        updateDisplayElementPreservingSpan('--global-font-size', 'css-global-font-size');
-        updateDisplayElementPreservingSpan('--global-line-height', 'css-global-line-height');
-        updateDisplayElementPreservingSpan('--global-space', 'css-global-space');
-        updateDisplayElementPreservingSpan('--font-stack', 'css-font-stack');
-        updateDisplayElementPreservingSpan('--mono-font-stack', 'css-mono-font-stack');
-        updateDisplayElementPreservingSpan('--background-color', 'css-background-color');
-        updateDisplayElementPreservingSpan('--font-color', 'css-font-color');
-        updateDisplayElementPreservingSpan('--invert-font-color', 'css-invert-font-color');
-        updateDisplayElementPreservingSpan('--primary-color', 'css-primary-color');
-        updateDisplayElementPreservingSpan('--secondary-color', 'css-secondary-color');
-        updateDisplayElementPreservingSpan('--error-color', 'css-error-color');
-        updateDisplayElementPreservingSpan('--progress-bar-background', 'css-progress-bar-background');
-        updateDisplayElementPreservingSpan('--progress-bar-fill', 'css-progress-bar-fill');
-        updateDisplayElementPreservingSpan('--code-bg-color', 'css-code-bg-color');
-        updateDisplayElementPreservingSpan('--block-background-color', 'css-block-background-color');
-        updateDisplayElementPreservingSpan('--input-style', 'css-input-style');
-        updateDisplayElementPreservingSpan('--display-h1-decoration', 'css-display-h1-decoration');
-    });
-</script>
 <!-- Fathom - beautiful, simple website analytics -->
 <script src="./newer_files/script.js" data-site="LCUDFNYO" defer=""></script>
 <!-- / Fathom -->
-</div></html>
+</body></html>

@@ -27,36 +27,6 @@
 <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
 <style>
-    .components-grid {
-      display: grid;
-      grid-column-gap: 1.4em;
-      grid-template-columns: auto;
-      grid-template-rows: auto;
-    }
-
-    .image-grid {
-      display: grid;
-      grid-template-rows: auto;
-      grid-gap: 1em;
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(calc(var(--page-width) / 12), 1fr)
-      );
-    }
-
-    @media only screen and (min-width: 70em) {
-      .components-grid {
-        grid-template-columns: 3fr 9fr;
-      }
-
-      .components-grid aside {
-        position: sticky;
-        top: calc(var(--global-space) * 2);
-      }
-    }
-  </style>
-
-<style>
   :root {
       --global-font-size: 15px;
       --global-line-height: 1.4em;
@@ -90,40 +60,16 @@
     color: #58A39B;
   }
 
+  h2 {
+    color: var(--primary-color);
+  }
+
   a {
     color: #C65087;
   }
 </style>
-
-    <!-- <style>
-        :root {
-            --global-font-size: 15px;
-            --global-line-height: 1.4em;
-            --global-space: 10px;
-            --font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-            serif;
-            --mono-font-stack: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace,
-            serif;
-            --background-color: #222225;
-            --page-width: 60em;
-            --font-color: #e8e9ed;
-            --invert-font-color: #222225;
-            --secondary-color: #a3abba;
-            --tertiary-color: #a3abba;
-            --primary-color: #62c4ff;
-            --error-color: #ff3c74;
-            --progress-bar-background: #3f3f44;
-            --progress-bar-fill: #62c4ff;
-            --code-bg-color: #3f3f44;
-            --input-style: solid;
-            --display-h1-decoration: none;
-        }
-    </style> -->
 </head>
 <body class="terminal">
-</div>
     <div class="container">
   <div class="terminal-nav">
     <header class="terminal-logo">
@@ -131,7 +77,7 @@
     </header>
     <nav class="terminal-menu">
       <ul vocab="https://schema.org/" typeof="BreadcrumbList">
-        <li><a href="/" class="menu-item"><span>Home</span></a><meta property="position"></li>
+        <li><a href="/" class="menu-item"><span>Home</span></a><meta property="position" content="1"></li>
         <li property="itemListElement" typeof="ListItem"><a href="/cse6xsdfa23" property="item" typeof="WebPage" class="menu-item"><span property="name">Teaching</span></a><meta property="position" content="2"></li>
         <li property="itemListElement" typeof="ListItem"><a href="/cv" property="item" typeof="WebPage" class="menu-item"><span property="name">Curriculum Vitae</span></a><meta property="position" content="3"></li>
       </ul>
@@ -140,85 +86,85 @@
 </div>
 <div class="container">
 <hr>
-<h2 class="hljs-built_in">EDUCATION</h2>
+<h2>EDUCATION</h2>
 <span class="turq">
 <pre style="white-space:pre-line;word-break:keep-all;">
-<b><span class="hljs-built_in" style="color:#58A39B">UNIVERSITY OF CALIFORNIA, SAN DIEGO</span></b>
+<b><span style="color:#58A39B">UNIVERSITY OF CALIFORNIA, SAN DIEGO</span></b>
 <span>B.S. in Computer Science & Bioinformatics</span><br>
 Summa Cum Laude | Phi Beta Kappa | Excellence in Teaching
 </pre>
 
 <hr>
-<h2 class="hljs-built_in">WORK</h2>
+<h2>WORK</h2>
 <pre style="white-space:pre-line;word-break:keep-all;">
-<b><span class="hljs-built_in" style="color:#58A39B">SR. SOFTWARE ENGINEER, LIFE SCIENCES AI</span></b>
+<b><span style="color:#58A39B">SR. SOFTWARE ENGINEER, LIFE SCIENCES AI</span></b>
 <span>Amazon Web Services</span><span style="float:right;">Jan '26 - Present</span><br>
 Tech lead across 2 AWS services in a 5-team, 60-engineer organization. Partner with senior leadership to define technical roadmap and drive execution. Combine architectural ownership with hands-on engineering.
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">ENGINEERING MANAGER, HEALTH AI</span></b>
+<b><span style="color:#58A39B">ENGINEERING MANAGER, HEALTH AI</span></b>
 <span>Amazon Web Services</span><span style="float:right;">Jan '24 - Jan '26</span><br>
 Led engineering team for <a target="_blank"href="https://aws.amazon.com/healthomics/">AWS HealthOmics</a>, a petabyte-scale bioinformatics platform.  Owned delivery of cross-team initiatives spanning distributed compute, workflow systems, and partner integrations.
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">SR. SOFTWARE ENGINEER, HEALTH AI</span></b>
+<b><span style="color:#58A39B">SR. SOFTWARE ENGINEER, HEALTH AI</span></b>
 <span>Amazon Web Services</span><span style="float:right;">Feb '22 - Jan '24</span><br>
 Founding engineer for <a target="_blank"href="https://aws.amazon.com/healthomics/">AWS HealthOmics</a>, taking the platform from inception to General Availability in 11 months. Designed and built core compute and workflow orchestration infrastructure for petabyte-scale genomics processing.
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">LECTURER</span></b>
+<b><span style="color:#58A39B">LECTURER</span></b>
 <span>UC San Diego</span><span style="float:right;">Jun '20 - Apr '24</span><br>
 Instructor for 2 courses I developed for UC San Diego. The first is the <a target="_blank"href="https://www.coursera.org/specializations/applied-bioinformatics">Applied Bioinformatics Specialization</a>, a health informatics series offered in partnership with Saint Petersburg State University. The second is CSE6, an adaptation of my <a target="_blank"href="https://discover.ucsd.edu/courses/cse-6.html">introductory Python course</a>.
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">SOFTWARE ENGINEER, EC2</span></b>
+<b><span style="color:#58A39B">SOFTWARE ENGINEER, EC2</span></b>
 <span>Amazon Web Services</span><span style="float:right;">Jul '20 - Feb '22</span><br>
 AWS Hyperplane, a distributed networking system powering Network Load Balancer, NAT Gateway, Elastic File System, PrivateLink, and more.
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">ADVISOR</span></b>
+<b><span style="color:#58A39B">ADVISOR</span></b>
 <span>UC San Diego</span><span style="float:right;">Apr '20 - Jun '20</span><br>
 Led ed-tech automation projects to implement remote instruction in light of the COVID-19 pandemic. My team integrated bespoke (no/low-code) pipelines spanning educational platforms, academic integrity, and university software to enable remote education.
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">SOFTWARE ENGINEER</span></b>
+<b><span style="color:#58A39B">SOFTWARE ENGINEER</span></b>
 <span>Amazon.com | Internship</span><span style="float:right;">Jun '19 - Sep '19</span><br>
 Optimized the Amazon Family recommendation engine, increasing suggestion quality and relevancy on Amazon.com.
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">RESEARCHER, COMPUTATIONAL BIOLOGY</span></b>
+<b><span style="color:#58A39B">RESEARCHER, COMPUTATIONAL BIOLOGY</span></b>
 <span>Scripps Institute of Oceanography</span><span style="float:right;">Jan '18 - Jun '19</span><br>
 Created big-data pipelines for processing genomic datasets, designed scripts for tertiary analysis, and assembled genomes using state-of-the-art bioinformatics pipelines.
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">TECHNICAL PRODUCT MANAGER</span></b>
+<b><span style="color:#58A39B">TECHNICAL PRODUCT MANAGER</span></b>
 <span>Bravado | Internship</span><span style="float:right;">Jul '18 - Mar '19</span><br>
 Swiss-army-knife spanning ideation, design, and delivery for 3 product releases. Led a data-driven UX overhaul for user onboarding and search optimization to reduce latency by 90%.
 </pre>
 
 <hr>
-<h2 class="hljs-built_in">PROJECTS: EDUCATION</h2>
+<h2>PROJECTS: EDUCATION</h2>
 <pre style="white-space:pre-line;word-break:keep-all;">
-<b><span class="hljs-built_in" style="color:#58A39B">CSE 6: INTRO TO COMP. SCI. & OOP: PYTHON</span></b><span style="float:right;">Feb '20 - Present</span><br>
+<b><span style="color:#58A39B">CSE 6: INTRO TO COMP. SCI. & OOP: PYTHON</span></b><span style="float:right;">Feb '20 - Present</span><br>
 I'm the first author of an interactive, adaptive textbook for CSE 6R, a new fully-online introductory computer science course offered across campuses at the University of California. It embraces an active-learning approach to challenge students to critically diagnose their own learning breakdowns.<br>
 <a target="_blank" href="https://stepik.org/course/56730/">View the interactive textbook here</a>
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">CSE 199: DEVELOPMENT OF NOVEL EDUCATIONAL TECHNIQUES</span></b><span style="float:right;">Jan '20 - Jun '20</span><br>
+<b><span style="color:#58A39B">CSE 199: DEVELOPMENT OF NOVEL EDUCATIONAL TECHNIQUES</span></b><span style="float:right;">Jan '20 - Jun '20</span><br>
 In partnership with <a target="_blank"href="https://hkn.ucsd.edu/">IEEE - Eta Kappa Nu</a>, I led an accredited, four-unit course at UC San Diego for conducting education research. My team was invited to present our initiative at the <a target="_blank" href="http://www.ccsc.org/southwestern/index.php">13th Consortium for Computing Sciences in Colleges Southwest Region Conference</a>.<br>
 <a target="_blank" href="199_poster.pdf">View our poster presentation here (Mansuri et al.)</a>
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">Introduction to Adversarial Search</span></b><span style="float:right;">May '19 - Mar '20</span><br>
+<b><span style="color:#58A39B">Introduction to Adversarial Search</span></b><span style="float:right;">May '19 - Mar '20</span><br>
 I'm the lead author for an introductory artifical intelligence mini-course for AP Computer Science students. Learners discover object-oriented programming principles, Minimax, and complete the course by building a Tic-Tac-Toe bot.<br>
 <a target="_blank" href="https://stepik.org/63429">Take the course (for free!)</a>
 </pre>
 
 <br>
-<h2 class="hljs-built_in">PROJECTS: SOFTWARE</h2>
+<h2>PROJECTS: SOFTWARE</h2>
 <pre style="white-space:pre-line;word-break:keep-all;">
-<b><span class="hljs-built_in" style="color:#58A39B">SCRIPTOR</span></b>
-<img src="images/Award.png" style="vertical-align: sub; margin-bottom: 0px;" height="20em"> Best Software Engineering Project, Spring 2019<span style="float:right;">React + GCP</span><br>
+<b><span style="color:#58A39B">SCRIPTOR</span></b>
+<img src="images/Award.png" style="vertical-align: sub; margin-bottom: 0px; height: 20px;"> Best Software Engineering Project, Spring 2019<span style="float:right;">React + GCP</span><br>
 Scriptor uses speech-to-text technology to index the UC San Diego Podcast System, allowing students to search for keywords and get precise timestamps with matching information in recorded lectures.
 
 Ahead of its time (and the COVID-19 pandemic), Scriptor was awarded Best Software Engineering Project at UC San Diego in 2019. 
@@ -226,106 +172,58 @@ Ahead of its time (and the COVID-19 pandemic), Scriptor was awarded Best Softwar
 <a target="_blank" href="https://github.com/sabeelmansuri/Scriptor">View the Scriptor codebase</a>
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">VIRTUS</span></b>
-<img src="images/Award.png" style="vertical-align: sub; margin-bottom: 0px" height="20em"> Winner - SD Hacks 2019<span style="float:right;">React + Python</span><br>
+<b><span style="color:#58A39B">VIRTUS</span></b>
+<img src="images/Award.png" style="vertical-align: sub; margin-bottom: 0px; height: 20px;"> Winner - SD Hacks 2019<span style="float:right;">React + Python</span><br>
 Virtus is a scalable solution for personalized education that enables productive and efficient virtual office hours. Instructors register their class and stream office hours remotely, and students use platform integrations to submit questions and collaborate with peers.
 
 <a target="_blank" href="https://devpost.com/software/virtus-a14wpr">Learn more about Virtus</a>
 </pre>
 
 <br>
-<h2 class="hljs-built_in">PROJECTS: BIOINFORMATICS</h2>
+<h2>PROJECTS: BIOINFORMATICS</h2>
 <pre style="white-space:pre-line;word-break:keep-all;">
-<b><span class="hljs-built_in" style="color:#58A39B">BIOINFORMATICS CRASH COURSE</span></b><span style="float:right;">AWS</span><br>
+<b><span style="color:#58A39B">BIOINFORMATICS CRASH COURSE</span></b><span style="float:right;">AWS</span><br>
 The Bioinformatics Crash Course is a year-long introductory sequence of lessons that introduces aspiring bioinformaticians to practical, lab-applicable skills. For years, it's served as students' first exposure to bioinformatics due to the current lack of an introductory series.
 
 <a target="_blank" href="https://www.bioinformaticscrashcourse.com/">The Crash Course is open-source and available online</a>
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">OXFORD-NANOPORE GENOME ASSEMBLY</span></b><span style="float:right;">Bash + Python</span><br>
+<b><span style="color:#58A39B">OXFORD-NANOPORE GENOME ASSEMBLY</span></b><span style="float:right;">Bash + Python</span><br>
 Oxford-Nanopore sequencing, which is moving toward becoming the new genome sequencing standard, was in its infancy when I assembled the genome of a local swamp bacteria. I published a tutorial on how to process, assemble, and annotate Oxford-Nanopore data.
 
 <a target="_blank" href="https://www.polarmicrobes.org/tutorial-nanopore-analysis-pipeline/">A step-by-step assembly is published here</a>
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">INTRODUCTION TO EPIGENOMICS</span></b><span style="float:right;">Genomics</span><br>
+<b><span style="color:#58A39B">INTRODUCTION TO EPIGENOMICS</span></b><span style="float:right;">Genomics</span><br>
 I co-authored a lesson on epigenomics, written to be accessible to novice learners and introduce students to the field.
 
 <a target="_blank" href="https://github.com/sabeelmansuri/Epigenomics/">The lesson is available here</a>
 </pre>
 
 <hr>
-<h2 class="hljs-built_in">ORGANIZATIONS</h2>
+<h2>ORGANIZATIONS</h2>
 <pre style="white-space:pre-line;word-break:keep-all;">
-<b><span class="hljs-built_in" style="color:#58A39B">IEEE - ETA KAPPA NU (HKN)</span></b>
+<b><span style="color:#58A39B">IEEE - ETA KAPPA NU (HKN)</span></b>
 Founder, Computer Science Outreach<br>
 HKN is the official honors society of the Jacobs School of Engineering at UC San Diego. I served as an officer from 2019-2020, founding HKN's Computer Science Outreach division. We connected local high schools with the resources and opportunities offered at UC San Diego.
 
 
-<b><span class="hljs-built_in" style="color:#58A39B">UNDERGRADUATE BIOINFORMATICS CLUB (UBIC)</span></b>
+<b><span style="color:#58A39B">UNDERGRADUATE BIOINFORMATICS CLUB (UBIC)</span></b>
 Ambassador & Course Developer<br>
 UBIC is a not-for-profit organization dedicated to furthering bioinformatics initiatives at UC San Diego. From 2017-2018, I was the main contact point for recruiting industry and academia representatives. Since 2018, I've developed and offered the <a target="_blank" href="https://www.bioinformaticscrashcourse.com/">Bioinformatics Crash Course</a> to hundreds of undergraduate and graduate students.
 </pre>
+</span>
 </div>
 
 <div class="container">
  
 
-</footer>
-
                 <hr>
                 <section>
     <p>Sabeel Mansuri (c) 2026</p>
 </section>
-            </main>
         </div>
-    </div>
-    <script src="./newer_files/highlight.min.js"></script>
-<script async="" defer="" src="./newer_files/buttons.js"></script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        document.querySelectorAll("pre code").forEach(block => {
-            window.hljs.highlightBlock(block);
-        });
-
-        // Get the computed style of the root element (usually :root in CSS)
-        const rootStyle = getComputedStyle(document.documentElement);
-
-        // Function to update the display element with the CSS variable value, preserving inner span
-        function updateDisplayElementPreservingSpan(cssVariable, displayElementId) {
-            const value = rootStyle.getPropertyValue(cssVariable).trim();
-            const displayElement = document.getElementById(displayElementId);
-            if (displayElement) {
-                // Preserve the inner span if it exists
-                const spanElement = displayElement.querySelector('.color-preview');
-                if (spanElement) {
-                    displayElement.innerHTML = `<span class="color-preview" style="background-color: ${value};"></span>${value}`;
-                } else {
-                    displayElement.textContent = value;
-                }
-            }
-        }
-        // Update each display element with its corresponding CSS variable value
-        updateDisplayElementPreservingSpan('--global-font-size', 'css-global-font-size');
-        updateDisplayElementPreservingSpan('--global-line-height', 'css-global-line-height');
-        updateDisplayElementPreservingSpan('--global-space', 'css-global-space');
-        updateDisplayElementPreservingSpan('--font-stack', 'css-font-stack');
-        updateDisplayElementPreservingSpan('--mono-font-stack', 'css-mono-font-stack');
-        updateDisplayElementPreservingSpan('--background-color', 'css-background-color');
-        updateDisplayElementPreservingSpan('--font-color', 'css-font-color');
-        updateDisplayElementPreservingSpan('--invert-font-color', 'css-invert-font-color');
-        updateDisplayElementPreservingSpan('--primary-color', 'css-primary-color');
-        updateDisplayElementPreservingSpan('--secondary-color', 'css-secondary-color');
-        updateDisplayElementPreservingSpan('--error-color', 'css-error-color');
-        updateDisplayElementPreservingSpan('--progress-bar-background', 'css-progress-bar-background');
-        updateDisplayElementPreservingSpan('--progress-bar-fill', 'css-progress-bar-fill');
-        updateDisplayElementPreservingSpan('--code-bg-color', 'css-code-bg-color');
-        updateDisplayElementPreservingSpan('--block-background-color', 'css-block-background-color');
-        updateDisplayElementPreservingSpan('--input-style', 'css-input-style');
-        updateDisplayElementPreservingSpan('--display-h1-decoration', 'css-display-h1-decoration');
-    });
-</script>
-<!-- Fathom - beautiful, simple website analytics -->
+    <!-- Fathom - beautiful, simple website analytics -->
 <script src="./newer_files/script.js" data-site="LCUDFNYO" defer=""></script>
 <!-- / Fathom -->
-</div></html>
+</body></html>
